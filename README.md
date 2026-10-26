@@ -65,8 +65,6 @@ The following commands have different effects:
 ./scripts/quest.sh reproduce-rq1 --confirm
 ```
 
-Do not use `run_rq1_h3.py --stage freeze` for reproduction: it retrains the model. The existing holdout3 has already been unblinded; another evaluation is a replication/reproduction exercise, not a new confirmatory test. `scripts/quest.sh` never commits, pushes, tags, installs packages, or deletes existing runs.
 
-## Publication and licensing gate
 
-**Do not publish this candidate until the project owner confirms institutional/IP permission, data and model release timing, and a repository licence.** No licence is asserted by this package. Dependencies and reused calibration fixtures retain their own applicable terms. Add a citation / BibTeX entry once the publication metadata is final. See `docs/PUBLIC_RELEASE_CHECKLIST.md` and `docs/VALIDATION_REPORT.md` for the current review status.
+
