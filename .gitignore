@@ -1,0 +1,35 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+quest-mpi-env/
+
+# Secrets and local-only configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Default to ignoring newly generated experiment outputs, while retaining the
+# frozen baseline artifacts shipped in this release candidate.
+runs/*
+!runs/rq1_h3/
+!runs/rq1_h3/**
+!runs/rq2_prelim/
+!runs/rq2_prelim/**
+!runs/rq1_hw/
+!runs/rq1_hw/**
+!runs/budget_h3/
+!runs/budget_h3/**
+!runs/findcuts_compare/
+!runs/findcuts_compare/**
+!runs/runs_ci_corrected_2026-10-25/
+!runs/runs_ci_corrected_2026-10-25/**
+
+# The frozen corpus is intentionally included in this candidate package.
+# Keep future scratch files out of data/ by default.
+data/*
+!data/corpus_v2/
+!data/corpus_v2/**

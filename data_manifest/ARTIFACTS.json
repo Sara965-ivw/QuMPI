@@ -1,0 +1,26 @@
+{
+  "package_name": "QuMPI release candidate",
+  "version": "pre-publication-review-2026-10-25",
+  "source_repository": "Sara965-ivw/quest-mpi",
+  "source_branch": "master",
+  "source_commit_reported": "c076020bf4017158b4a72e9cc72002dfe0617e84",
+  "source_tree_status": "Reported clean by user terminal; .git directory was not present in source archive, so cannot be independently verified from archive alone.",
+  "collected_artifacts": {
+    "corpus_files": 672,
+    "rq1_h3_files": 21,
+    "rq2_prelim_files": 54,
+    "supporting_analysis_files": 28,
+    "frozen_model_checkpoints": 10,
+    "selected_holdout3_circuits": 143,
+    "rq2_timed_runs": 576
+  },
+  "sha256_manifest": "data_manifest/FROZEN_ARTIFACTS_SHA256SUMS.txt",
+  "source_sha256_manifest": "data_manifest/SOURCE_SHA256SUMS.txt",
+  "claims_not_made": [
+    "No experiments rerun during packaging",
+    "No clean install validated",
+    "No new scientific results produced",
+    "No public licence granted by this package"
+  ],
+  "release_status": "Review candidate; explicit institutional/IP and licence decisions required before public push."
+}

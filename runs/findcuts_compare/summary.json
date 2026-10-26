@@ -1,0 +1,533 @@
+{
+ "all": {
+  "n": 142,
+  "model": {
+   "F": 0.9297790738626741,
+   "regret": 0.004966035854764645,
+   "MSE@1e3|geo_ratio_to_oracle": 11.671467181838947,
+   "MSE@1e4|geo_ratio_to_oracle": 6.932277955500731,
+   "MSE@1e5|geo_ratio_to_oracle": 3.0046718769247573,
+   "MSE@1e6|geo_ratio_to_oracle": 1.5411115578757562
+  },
+  "gbm-layout": {
+   "F": 0.9294966354959997,
+   "regret": 0.0052484742214389864,
+   "MSE@1e3|geo_ratio_to_oracle": 6.552768280760429,
+   "MSE@1e4|geo_ratio_to_oracle": 4.192976305905096,
+   "MSE@1e5|geo_ratio_to_oracle": 2.182041385214515,
+   "MSE@1e6|geo_ratio_to_oracle": 1.3614110070308851
+  },
+  "esp_layout": {
+   "F": 0.928950708833032,
+   "regret": 0.0057944008844065375,
+   "MSE@1e3|geo_ratio_to_oracle": 10.776021122338806,
+   "MSE@1e4|geo_ratio_to_oracle": 6.445909491801538,
+   "MSE@1e5|geo_ratio_to_oracle": 2.9512667627424007,
+   "MSE@1e6|geo_ratio_to_oracle": 1.5863466390721797
+  },
+  "min_overhead": {
+   "F": 0.9270591689066199,
+   "regret": 0.007685940810818785,
+   "MSE@1e3|geo_ratio_to_oracle": 1.8989560175122557,
+   "MSE@1e4|geo_ratio_to_oracle": 1.4643006075441352,
+   "MSE@1e5|geo_ratio_to_oracle": 1.15639767329616,
+   "MSE@1e6|geo_ratio_to_oracle": 1.09903800630928
+  },
+  "metis": {
+   "F": 0.9251501467766533,
+   "regret": 0.009594962940785417,
+   "MSE@1e3|geo_ratio_to_oracle": 2.736192142216589,
+   "MSE@1e4|geo_ratio_to_oracle": 1.9693198722912584,
+   "MSE@1e5|geo_ratio_to_oracle": 1.3896641814011481,
+   "MSE@1e6|geo_ratio_to_oracle": 1.2136852537661675
+  },
+  "random": {
+   "F": 0.9252157048911599,
+   "regret": 0.00952940482627874,
+   "MSE@1e3|geo_ratio_to_oracle": 21.791215011606212,
+   "MSE@1e4|geo_ratio_to_oracle": 12.376875642970232,
+   "MSE@1e5|geo_ratio_to_oracle": 4.726401089812315,
+   "MSE@1e6|geo_ratio_to_oracle": 1.9875519892679414
+  },
+  "find_cuts": {
+   "F": 0.9252948780462653,
+   "regret": 0.009450231671173587,
+   "MSE@1e3|geo_ratio_to_oracle": 1.0935018175302618,
+   "MSE@1e4|geo_ratio_to_oracle": 1.1152381384201497,
+   "MSE@1e5|geo_ratio_to_oracle": 1.1528814391886608,
+   "MSE@1e6|geo_ratio_to_oracle": 1.2152009327320639
+  }
+ },
+ "connected": {
+  "n": 109,
+  "model": {
+   "F": 0.924934899981802,
+   "regret": 0.004928614044192412,
+   "MSE@1e3|geo_ratio_to_oracle": 5.3669000843469545,
+   "MSE@1e4|geo_ratio_to_oracle": 3.993977095820666,
+   "MSE@1e5|geo_ratio_to_oracle": 2.2902712508094574,
+   "MSE@1e6|geo_ratio_to_oracle": 1.4243998042227957
+  },
+  "gbm-layout": {
+   "F": 0.9251614797402525,
+   "regret": 0.004702034285741808,
+   "MSE@1e3|geo_ratio_to_oracle": 2.890166425164494,
+   "MSE@1e4|geo_ratio_to_oracle": 2.3538275239827398,
+   "MSE@1e5|geo_ratio_to_oracle": 1.6485624530610863,
+   "MSE@1e6|geo_ratio_to_oracle": 1.2366506037653242
+  },
+  "esp_layout": {
+   "F": 0.92446318660279,
+   "regret": 0.005400327423204344,
+   "MSE@1e3|geo_ratio_to_oracle": 5.486568471182973,
+   "MSE@1e4|geo_ratio_to_oracle": 4.067224049788363,
+   "MSE@1e5|geo_ratio_to_oracle": 2.3748938052145956,
+   "MSE@1e6|geo_ratio_to_oracle": 1.474928707227543
+  },
+  "min_overhead": {
+   "F": 0.923454041863573,
+   "regret": 0.006409472162421471,
+   "MSE@1e3|geo_ratio_to_oracle": 1.1545429297105114,
+   "MSE@1e4|geo_ratio_to_oracle": 1.110865619356215,
+   "MSE@1e5|geo_ratio_to_oracle": 1.0586372080976711,
+   "MSE@1e6|geo_ratio_to_oracle": 1.0640857730651427
+  },
+  "metis": {
+   "F": 0.922054531397753,
+   "regret": 0.0078089826282414085,
+   "MSE@1e3|geo_ratio_to_oracle": 1.4612874767319015,
+   "MSE@1e4|geo_ratio_to_oracle": 1.3100825116801877,
+   "MSE@1e5|geo_ratio_to_oracle": 1.1492036693269312,
+   "MSE@1e6|geo_ratio_to_oracle": 1.1225249844583352
+  },
+  "random": {
+   "F": 0.9212524348321913,
+   "regret": 0.00861107919380293,
+   "MSE@1e3|geo_ratio_to_oracle": 12.303558911796767,
+   "MSE@1e4|geo_ratio_to_oracle": 8.637678756280753,
+   "MSE@1e5|geo_ratio_to_oracle": 4.169505156608428,
+   "MSE@1e6|geo_ratio_to_oracle": 1.9377865070732134
+  },
+  "find_cuts": {
+   "F": 0.9206807122764943,
+   "regret": 0.009182801749500077,
+   "MSE@1e3|geo_ratio_to_oracle": 1.0857551579371914,
+   "MSE@1e4|geo_ratio_to_oracle": 1.1197767205687277,
+   "MSE@1e5|geo_ratio_to_oracle": 1.1803022452695746,
+   "MSE@1e6|geo_ratio_to_oracle": 1.2339817287680495
+  }
+ },
+ "separable": {
+  "n": 33,
+  "model": {
+   "F": 0.9457795269843426,
+   "regret": 0.00508964122907899,
+   "MSE@1e3|geo_ratio_to_oracle": 151.90577880474873,
+   "MSE@1e4|geo_ratio_to_oracle": 42.840442534715386,
+   "MSE@1e5|geo_ratio_to_oracle": 7.366442214630338,
+   "MSE@1e6|geo_ratio_to_oracle": 1.9989636132993511
+  },
+  "gbm-layout": {
+   "F": 0.9438157863255889,
+   "regret": 0.0070533818878327,
+   "MSE@1e3|geo_ratio_to_oracle": 97.87202057968757,
+   "MSE@1e4|geo_ratio_to_oracle": 28.232536322110676,
+   "MSE@1e5|geo_ratio_to_oracle": 5.50848227386383,
+   "MSE@1e6|geo_ratio_to_oracle": 1.87010139166496
+  },
+  "esp_layout": {
+   "F": 0.9437731307450443,
+   "regret": 0.007096037468377422,
+   "MSE@1e3|geo_ratio_to_oracle": 100.17675766557744,
+   "MSE@1e4|geo_ratio_to_oracle": 29.50151863758328,
+   "MSE@1e5|geo_ratio_to_oracle": 6.049180134815349,
+   "MSE@1e6|geo_ratio_to_oracle": 2.017730897289555
+  },
+  "min_overhead": {
+   "F": 0.9389670127760784,
+   "regret": 0.011902155437343244,
+   "MSE@1e3|geo_ratio_to_oracle": 9.824618037797395,
+   "MSE@1e4|geo_ratio_to_oracle": 3.646620334751648,
+   "MSE@1e5|geo_ratio_to_oracle": 1.5481449962239713,
+   "MSE@1e6|geo_ratio_to_oracle": 1.2228531053451486
+  },
+  "metis": {
+   "F": 0.9353750581796879,
+   "regret": 0.01549411003373381,
+   "MSE@1e3|geo_ratio_to_oracle": 21.723417283078927,
+   "MSE@1e4|geo_ratio_to_oracle": 7.568517280986877,
+   "MSE@1e5|geo_ratio_to_oracle": 2.6028691723610997,
+   "MSE@1e6|geo_ratio_to_oracle": 1.5707679403548411
+  },
+  "random": {
+   "F": 0.9383065059950259,
+   "regret": 0.012562662218395809,
+   "MSE@1e3|geo_ratio_to_oracle": 143.96635423579949,
+   "MSE@1e4|geo_ratio_to_oracle": 40.6060303076003,
+   "MSE@1e5|geo_ratio_to_oracle": 7.1510127905541605,
+   "MSE@1e6|geo_ratio_to_oracle": 2.161191992522358
+  },
+  "find_cuts": {
+   "F": 0.9405356074070235,
+   "regret": 0.010333560806398209,
+   "MSE@1e3|geo_ratio_to_oracle": 1.1194842094860367,
+   "MSE@1e4|geo_ratio_to_oracle": 1.1003773850246,
+   "MSE@1e5|geo_ratio_to_oracle": 1.0667566983373664,
+   "MSE@1e6|geo_ratio_to_oracle": 1.1551750885829988
+  }
+ },
+ "family=clustered_random": {
+  "n": 47,
+  "model": {
+   "F": 0.9362424605687603,
+   "regret": 0.0075555655264724075,
+   "MSE@1e3|geo_ratio_to_oracle": 82.49712235648741,
+   "MSE@1e4|geo_ratio_to_oracle": 33.203006777637704,
+   "MSE@1e5|geo_ratio_to_oracle": 7.196890157865017,
+   "MSE@1e6|geo_ratio_to_oracle": 1.9400152032058517
+  },
+  "gbm-layout": {
+   "F": 0.9337821554720596,
+   "regret": 0.010015870623173048,
+   "MSE@1e3|geo_ratio_to_oracle": 27.90537524042827,
+   "MSE@1e4|geo_ratio_to_oracle": 12.482976094808185,
+   "MSE@1e5|geo_ratio_to_oracle": 3.7401572848801274,
+   "MSE@1e6|geo_ratio_to_oracle": 1.561446757827535
+  },
+  "esp_layout": {
+   "F": 0.9343501369848649,
+   "regret": 0.009447889110367697,
+   "MSE@1e3|geo_ratio_to_oracle": 61.37807165877951,
+   "MSE@1e4|geo_ratio_to_oracle": 25.547574617256757,
+   "MSE@1e5|geo_ratio_to_oracle": 6.324924080075145,
+   "MSE@1e6|geo_ratio_to_oracle": 1.963010997164635
+  },
+  "min_overhead": {
+   "F": 0.9310519109986714,
+   "regret": 0.012746115096561376,
+   "MSE@1e3|geo_ratio_to_oracle": 3.918888104878104,
+   "MSE@1e4|geo_ratio_to_oracle": 2.1657916983357177,
+   "MSE@1e5|geo_ratio_to_oracle": 1.26201581821179,
+   "MSE@1e6|geo_ratio_to_oracle": 1.1204492843366496
+  },
+  "metis": {
+   "F": 0.9271302364920931,
+   "regret": 0.01666778960313962,
+   "MSE@1e3|geo_ratio_to_oracle": 6.497007817730064,
+   "MSE@1e4|geo_ratio_to_oracle": 3.4743236404719884,
+   "MSE@1e5|geo_ratio_to_oracle": 1.8030120033481123,
+   "MSE@1e6|geo_ratio_to_oracle": 1.3568459559615949
+  },
+  "random": {
+   "F": 0.9295301855724845,
+   "regret": 0.014267840522748085,
+   "MSE@1e3|geo_ratio_to_oracle": 92.12777424911266,
+   "MSE@1e4|geo_ratio_to_oracle": 36.67547097343006,
+   "MSE@1e5|geo_ratio_to_oracle": 7.6765385194297195,
+   "MSE@1e6|geo_ratio_to_oracle": 2.1091398040791454
+  },
+  "find_cuts": {
+   "F": 0.9302017575608396,
+   "regret": 0.013596268534392998,
+   "MSE@1e3|geo_ratio_to_oracle": 1.291551069444609,
+   "MSE@1e4|geo_ratio_to_oracle": 1.2780197309284127,
+   "MSE@1e5|geo_ratio_to_oracle": 1.2461324755169418,
+   "MSE@1e6|geo_ratio_to_oracle": 1.2837935847525497
+  }
+ },
+ "family=qaoa_sbm": {
+  "n": 47,
+  "model": {
+   "F": 0.9112605042985487,
+   "regret": 0.0046300986088182216,
+   "MSE@1e3|geo_ratio_to_oracle": 18.03203872961674,
+   "MSE@1e4|geo_ratio_to_oracle": 9.25938799994079,
+   "MSE@1e5|geo_ratio_to_oracle": 3.443588320169285,
+   "MSE@1e6|geo_ratio_to_oracle": 1.7464949074856866
+  },
+  "gbm-layout": {
+   "F": 0.9116927574566162,
+   "regret": 0.004197845450750989,
+   "MSE@1e3|geo_ratio_to_oracle": 8.5056167624985,
+   "MSE@1e4|geo_ratio_to_oracle": 5.007272882200408,
+   "MSE@1e5|geo_ratio_to_oracle": 2.427617786910448,
+   "MSE@1e6|geo_ratio_to_oracle": 1.4685556029571087
+  },
+  "esp_layout": {
+   "F": 0.9104959841748954,
+   "regret": 0.00539461873247163,
+   "MSE@1e3|geo_ratio_to_oracle": 21.42321058076538,
+   "MSE@1e4|geo_ratio_to_oracle": 10.8342974214295,
+   "MSE@1e5|geo_ratio_to_oracle": 4.058136277981072,
+   "MSE@1e6|geo_ratio_to_oracle": 1.9539606319066736
+  },
+  "min_overhead": {
+   "F": 0.9087360734166996,
+   "regret": 0.007154529490667487,
+   "MSE@1e3|geo_ratio_to_oracle": 1.7685669051275665,
+   "MSE@1e4|geo_ratio_to_oracle": 1.4462905849096404,
+   "MSE@1e5|geo_ratio_to_oracle": 1.184663657265779,
+   "MSE@1e6|geo_ratio_to_oracle": 1.1088823989254926
+  },
+  "metis": {
+   "F": 0.9084191389455151,
+   "regret": 0.007471463961852179,
+   "MSE@1e3|geo_ratio_to_oracle": 2.5357957116331677,
+   "MSE@1e4|geo_ratio_to_oracle": 1.8441564798545553,
+   "MSE@1e5|geo_ratio_to_oracle": 1.3240356338921082,
+   "MSE@1e6|geo_ratio_to_oracle": 1.1633181595962356
+  },
+  "random": {
+   "F": 0.9097752037281156,
+   "regret": 0.006115399179251394,
+   "MSE@1e3|geo_ratio_to_oracle": 23.23152708484093,
+   "MSE@1e4|geo_ratio_to_oracle": 11.506910586050974,
+   "MSE@1e5|geo_ratio_to_oracle": 4.160107943939173,
+   "MSE@1e6|geo_ratio_to_oracle": 1.9846161371690494
+  },
+  "find_cuts": {
+   "F": 0.9087515438995779,
+   "regret": 0.007139059007789205,
+   "MSE@1e3|geo_ratio_to_oracle": 1.0,
+   "MSE@1e4|geo_ratio_to_oracle": 1.0,
+   "MSE@1e5|geo_ratio_to_oracle": 1.004408483684253,
+   "MSE@1e6|geo_ratio_to_oracle": 1.0486045099427825
+  }
+ },
+ "family=twolocal": {
+  "n": 48,
+  "model": {
+   "F": 0.9415831070778374,
+   "regret": 0.002759393271206667,
+   "MSE@1e3|geo_ratio_to_oracle": 1.123369366294461,
+   "MSE@1e4|geo_ratio_to_oracle": 1.1263154325776015,
+   "MSE@1e5|geo_ratio_to_oracle": 1.1178197126808516,
+   "MSE@1e6|geo_ratio_to_oracle": 1.0882895238619783
+  },
+  "gbm-layout": {
+   "F": 0.942733361099671,
+   "regret": 0.00160913924937305,
+   "MSE@1e3|geo_ratio_to_oracle": 1.228430023488542,
+   "MSE@1e4|geo_ratio_to_oracle": 1.210944892734216,
+   "MSE@1e5|geo_ratio_to_oracle": 1.159736370774333,
+   "MSE@1e6|geo_ratio_to_oracle": 1.105289416651954
+  },
+  "esp_layout": {
+   "F": 0.9417340199954549,
+   "regret": 0.002608480353589168,
+   "MSE@1e3|geo_ratio_to_oracle": 1.00100314355194,
+   "MSE@1e4|geo_ratio_to_oracle": 1.0066074459410437,
+   "MSE@1e5|geo_ratio_to_oracle": 1.0242875502441553,
+   "MSE@1e6|geo_ratio_to_oracle": 1.0499512111778149
+  },
+  "min_overhead": {
+   "F": 0.941090973275367,
+   "regret": 0.003251527073677309,
+   "MSE@1e3|geo_ratio_to_oracle": 1.0015483360258377,
+   "MSE@1e4|geo_ratio_to_oracle": 1.0102942834135562,
+   "MSE@1e5|geo_ratio_to_oracle": 1.036742837699806,
+   "MSE@1e6|geo_ratio_to_oracle": 1.0690935162256914
+  },
+  "metis": {
+   "F": 0.939593754098275,
+   "regret": 0.004748746250769056,
+   "MSE@1e3|geo_ratio_to_oracle": 1.2640034416622548,
+   "MSE@1e4|geo_ratio_to_oracle": 1.2045453523842635,
+   "MSE@1e5|geo_ratio_to_oracle": 1.1291447071112584,
+   "MSE@1e6|geo_ratio_to_oracle": 1.1342649859817868
+  },
+  "random": {
+   "F": 0.9361099332795106,
+   "regret": 0.008232567069533446,
+   "MSE@1e3|geo_ratio_to_oracle": 4.988833735875311,
+   "MSE@1e4|geo_ratio_to_oracle": 4.588467416671116,
+   "MSE@1e5|geo_ratio_to_oracle": 3.3308510077969133,
+   "MSE@1e6|geo_ratio_to_oracle": 1.878008087689241
+  },
+  "find_cuts": {
+   "F": 0.936688906540209,
+   "regret": 0.007653593808835117,
+   "MSE@1e3|geo_ratio_to_oracle": 1.0140147898304124,
+   "MSE@1e4|geo_ratio_to_oracle": 1.0859533305128046,
+   "MSE@1e5|geo_ratio_to_oracle": 1.2227444931230222,
+   "MSE@1e6|geo_ratio_to_oracle": 1.3304546748319457
+  }
+ },
+ "width=16": {
+  "n": 48,
+  "model": {
+   "F": 0.9475290370025995,
+   "regret": 0.004089168493234596,
+   "MSE@1e3|geo_ratio_to_oracle": 12.811056182663217,
+   "MSE@1e4|geo_ratio_to_oracle": 7.49414502151265,
+   "MSE@1e5|geo_ratio_to_oracle": 3.1566636311182843,
+   "MSE@1e6|geo_ratio_to_oracle": 1.6108827061081685
+  },
+  "gbm-layout": {
+   "F": 0.9483452125959762,
+   "regret": 0.0032729928998577623,
+   "MSE@1e3|geo_ratio_to_oracle": 7.010736748288275,
+   "MSE@1e4|geo_ratio_to_oracle": 4.240453816468256,
+   "MSE@1e5|geo_ratio_to_oracle": 2.0614299191921113,
+   "MSE@1e6|geo_ratio_to_oracle": 1.3102422839560155
+  },
+  "esp_layout": {
+   "F": 0.94680442180966,
+   "regret": 0.004813783686174006,
+   "MSE@1e3|geo_ratio_to_oracle": 13.228969464027708,
+   "MSE@1e4|geo_ratio_to_oracle": 7.859369124602767,
+   "MSE@1e5|geo_ratio_to_oracle": 3.4598035486572303,
+   "MSE@1e6|geo_ratio_to_oracle": 1.7610624938554003
+  },
+  "min_overhead": {
+   "F": 0.9474355394659967,
+   "regret": 0.004182666029837401,
+   "MSE@1e3|geo_ratio_to_oracle": 2.2021909561803716,
+   "MSE@1e4|geo_ratio_to_oracle": 1.592979728345628,
+   "MSE@1e5|geo_ratio_to_oracle": 1.1709645143666692,
+   "MSE@1e6|geo_ratio_to_oracle": 1.0967345220629023
+  },
+  "metis": {
+   "F": 0.9464108840374627,
+   "regret": 0.005207321458371356,
+   "MSE@1e3|geo_ratio_to_oracle": 2.926822611520246,
+   "MSE@1e4|geo_ratio_to_oracle": 1.9639757753317373,
+   "MSE@1e5|geo_ratio_to_oracle": 1.301853308761492,
+   "MSE@1e6|geo_ratio_to_oracle": 1.1689165577468612
+  },
+  "random": {
+   "F": 0.9446146263992626,
+   "regret": 0.007003579096571494,
+   "MSE@1e3|geo_ratio_to_oracle": 21.941715487544943,
+   "MSE@1e4|geo_ratio_to_oracle": 12.58862261242147,
+   "MSE@1e5|geo_ratio_to_oracle": 4.855965915772334,
+   "MSE@1e6|geo_ratio_to_oracle": 2.045809171156503
+  },
+  "find_cuts": {
+   "F": 0.9438961188225509,
+   "regret": 0.007722086673283349,
+   "MSE@1e3|geo_ratio_to_oracle": 1.0055921543460509,
+   "MSE@1e4|geo_ratio_to_oracle": 1.03402459070743,
+   "MSE@1e5|geo_ratio_to_oracle": 1.0980657761457155,
+   "MSE@1e6|geo_ratio_to_oracle": 1.2245546187405634
+  }
+ },
+ "width=18": {
+  "n": 48,
+  "model": {
+   "F": 0.9332061104552697,
+   "regret": 0.004125587526553412,
+   "MSE@1e3|geo_ratio_to_oracle": 12.177313502950625,
+   "MSE@1e4|geo_ratio_to_oracle": 7.396140901084844,
+   "MSE@1e5|geo_ratio_to_oracle": 3.2518679992347788,
+   "MSE@1e6|geo_ratio_to_oracle": 1.5774453842342824
+  },
+  "gbm-layout": {
+   "F": 0.9308915861724719,
+   "regret": 0.006440111809351233,
+   "MSE@1e3|geo_ratio_to_oracle": 4.627212571996344,
+   "MSE@1e4|geo_ratio_to_oracle": 3.268663860526466,
+   "MSE@1e5|geo_ratio_to_oracle": 1.9462057489241025,
+   "MSE@1e6|geo_ratio_to_oracle": 1.3100835694070123
+  },
+  "esp_layout": {
+   "F": 0.9310856855085291,
+   "regret": 0.00624601247329402,
+   "MSE@1e3|geo_ratio_to_oracle": 10.538137418184153,
+   "MSE@1e4|geo_ratio_to_oracle": 6.411607434170872,
+   "MSE@1e5|geo_ratio_to_oracle": 3.000983991424105,
+   "MSE@1e6|geo_ratio_to_oracle": 1.6096799572591858
+  },
+  "min_overhead": {
+   "F": 0.9293175886001238,
+   "regret": 0.008014109381699412,
+   "MSE@1e3|geo_ratio_to_oracle": 1.8498084649330147,
+   "MSE@1e4|geo_ratio_to_oracle": 1.471787763865874,
+   "MSE@1e5|geo_ratio_to_oracle": 1.1679980646324906,
+   "MSE@1e6|geo_ratio_to_oracle": 1.0771800409505312
+  },
+  "metis": {
+   "F": 0.9239287518561895,
+   "regret": 0.013402946125633733,
+   "MSE@1e3|geo_ratio_to_oracle": 2.7451761371373,
+   "MSE@1e4|geo_ratio_to_oracle": 2.0726850753700883,
+   "MSE@1e5|geo_ratio_to_oracle": 1.521378219603376,
+   "MSE@1e6|geo_ratio_to_oracle": 1.278102780611512
+  },
+  "random": {
+   "F": 0.9252325419788395,
+   "regret": 0.01209915600298378,
+   "MSE@1e3|geo_ratio_to_oracle": 19.029775976356735,
+   "MSE@1e4|geo_ratio_to_oracle": 11.322412696053629,
+   "MSE@1e5|geo_ratio_to_oracle": 4.722995173292552,
+   "MSE@1e6|geo_ratio_to_oracle": 2.0732743553092194
+  },
+  "find_cuts": {
+   "F": 0.9246726070293826,
+   "regret": 0.012659090952440765,
+   "MSE@1e3|geo_ratio_to_oracle": 1.008811059486184,
+   "MSE@1e4|geo_ratio_to_oracle": 1.047769034514617,
+   "MSE@1e5|geo_ratio_to_oracle": 1.1201872236921995,
+   "MSE@1e6|geo_ratio_to_oracle": 1.192995916044661
+  }
+ },
+ "width=20": {
+  "n": 46,
+  "model": {
+   "F": 0.9076813350113476,
+   "regret": 0.0067580174440598955,
+   "MSE@1e3|geo_ratio_to_oracle": 10.13163876477518,
+   "MSE@1e4|geo_ratio_to_oracle": 5.973186219820712,
+   "MSE@1e5|geo_ratio_to_oracle": 2.6278785161121654,
+   "MSE@1e6|geo_ratio_to_oracle": 1.4361767467602098
+  },
+  "gbm-layout": {
+   "F": 0.9083729543379662,
+   "regret": 0.006066398117441399,
+   "MSE@1e3|geo_ratio_to_oracle": 8.77981807731986,
+   "MSE@1e4|geo_ratio_to_oracle": 5.373710767821044,
+   "MSE@1e5|geo_ratio_to_oracle": 2.608945716005113,
+   "MSE@1e6|geo_ratio_to_oracle": 1.4749123130858186
+  },
+  "esp_layout": {
+   "F": 0.9080929457177717,
+   "regret": 0.006346406737636155,
+   "MSE@1e3|geo_ratio_to_oracle": 8.905010385723847,
+   "MSE@1e4|geo_ratio_to_oracle": 5.270540088754042,
+   "MSE@1e5|geo_ratio_to_oracle": 2.4569310541360507,
+   "MSE@1e6|geo_ratio_to_oracle": 1.4009781444061
+  },
+  "min_overhead": {
+   "F": 0.9034402573383966,
+   "regret": 0.010999095117010879,
+   "MSE@1e3|geo_ratio_to_oracle": 1.6720941330894215,
+   "MSE@1e4|geo_ratio_to_oracle": 1.3339776506698064,
+   "MSE@1e5|geo_ratio_to_oracle": 1.1295642144128089,
+   "MSE@1e6|geo_ratio_to_oracle": 1.1247791607761244
+  },
+  "metis": {
+   "F": 0.9042395286823798,
+   "regret": 0.010199823773027934,
+   "MSE@1e3|geo_ratio_to_oracle": 2.5417891989342314,
+   "MSE@1e4|geo_ratio_to_oracle": 1.8722536869205257,
+   "MSE@1e5|geo_ratio_to_oracle": 1.3534835290295677,
+   "MSE@1e6|geo_ratio_to_oracle": 1.1959199304113877
+  },
+  "random": {
+   "F": 0.9049557828781701,
+   "regret": 0.00948356957723756,
+   "MSE@1e3|geo_ratio_to_oracle": 24.921186706644434,
+   "MSE@1e4|geo_ratio_to_oracle": 13.343721468214635,
+   "MSE@1e5|geo_ratio_to_oracle": 4.598344947867007,
+   "MSE@1e6|geo_ratio_to_oracle": 1.8454010936949168
+  },
+  "find_cuts": {
+   "F": 0.9065342139494971,
+   "regret": 0.00790513850591069,
+   "MSE@1e3|geo_ratio_to_oracle": 1.2981697416713713,
+   "MSE@1e4|geo_ratio_to_oracle": 1.2879898685947162,
+   "MSE@1e5|geo_ratio_to_oracle": 1.2499655064855988,
+   "MSE@1e6|geo_ratio_to_oracle": 1.2289397814122056
+  }
+ }
+}

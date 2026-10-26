@@ -1,0 +1,50 @@
+Card A: comparison with qiskit-addon-cutting find_cuts on holdout3 (EXPLORATORY, decision A1)
+circuits compared: 142 of 143; excluded: [('holdout3_clustered_random_n20_s97365', 'find_cuts status timeout')]
+find_cuts cut reused from candidates: 95; no-cut option: 25; rerun at width < 13: 60
+
+== all (n = 142)
+method               F   regret   MSE/oracle@1e3   MSE/oracle@1e4   MSE/oracle@1e5   MSE/oracle@1e6
+model           0.9298   0.0050            11.67             6.93             3.00             1.54
+gbm-layout      0.9295   0.0052             6.55             4.19             2.18             1.36
+esp_layout      0.9290   0.0058            10.78             6.45             2.95             1.59
+min_overhead    0.9271   0.0077             1.90             1.46             1.16             1.10
+metis           0.9252   0.0096             2.74             1.97             1.39             1.21
+random          0.9252   0.0095            21.79            12.38             4.73             1.99
+find_cuts       0.9253   0.0095             1.09             1.12             1.15             1.22
+  paired vs find_cuts (F: +diff = method better; MSE: +log ratio = method lower MSE)
+  model: F +0.0045 W/T/L 86/6/50 Holm p 9.4e-06 | MSE@1e3 x0.09 W/T/L 38/6/98 Holm p 2.1e-14 | MSE@1e4 x0.16 W/T/L 38/6/98 Holm p 2.6e-14 | MSE@1e5 x0.38 W/T/L 38/6/98 Holm p 3.9e-13 | MSE@1e6 x0.79 W/T/L 55/6/81 Holm p 7.5e-04
+  gbm-layout: F +0.0042 W/T/L 76/36/30 Holm p 7.4e-08 | MSE@1e3 x0.17 W/T/L 38/36/68 Holm p 9.4e-09 | MSE@1e4 x0.27 W/T/L 38/36/68 Holm p 6.0e-09 | MSE@1e5 x0.53 W/T/L 39/36/67 Holm p 1.7e-07 | MSE@1e6 x0.89 W/T/L 53/36/53 Holm p 2.5e-01
+  esp_layout: F +0.0037 W/T/L 93/4/45 Holm p 1.6e-06 | MSE@1e3 x0.10 W/T/L 46/4/92 Holm p 8.0e-13 | MSE@1e4 x0.17 W/T/L 46/4/92 Holm p 8.0e-13 | MSE@1e5 x0.39 W/T/L 47/4/91 Holm p 9.7e-11 | MSE@1e6 x0.77 W/T/L 65/4/73 Holm p 1.2e-03
+  min_overhead: F +0.0018 W/T/L 58/47/37 Holm p 4.1e-02 | MSE@1e3 x0.58 W/T/L 46/47/49 Holm p 3.5e-02 | MSE@1e4 x0.76 W/T/L 46/47/49 Holm p 3.5e-02 | MSE@1e5 x1.00 W/T/L 50/47/45 Holm p 7.9e-01 | MSE@1e6 x1.11 W/T/L 58/47/37 Holm p 3.1e-03
+
+== connected (n = 109)
+method               F   regret   MSE/oracle@1e3   MSE/oracle@1e4   MSE/oracle@1e5   MSE/oracle@1e6
+model           0.9249   0.0049             5.37             3.99             2.29             1.42
+gbm-layout      0.9252   0.0047             2.89             2.35             1.65             1.24
+esp_layout      0.9245   0.0054             5.49             4.07             2.37             1.47
+min_overhead    0.9235   0.0064             1.15             1.11             1.06             1.06
+metis           0.9221   0.0078             1.46             1.31             1.15             1.12
+random          0.9213   0.0086            12.30             8.64             4.17             1.94
+find_cuts       0.9207   0.0092             1.09             1.12             1.18             1.23
+  paired vs find_cuts (F: +diff = method better; MSE: +log ratio = method lower MSE)
+  model: F +0.0043 W/T/L 65/6/38 Holm p 2.1e-04 | MSE@1e3 x0.20 W/T/L 38/6/65 Holm p 3.1e-07 | MSE@1e4 x0.28 W/T/L 38/6/65 Holm p 3.2e-07 | MSE@1e5 x0.52 W/T/L 38/6/65 Holm p 2.4e-06 | MSE@1e6 x0.87 W/T/L 46/6/57 Holm p 1.3e-01
+  gbm-layout: F +0.0045 W/T/L 57/36/16 Holm p 7.3e-08 | MSE@1e3 x0.38 W/T/L 38/36/35 Holm p 4.5e-02 | MSE@1e4 x0.48 W/T/L 38/36/35 Holm p 3.4e-02 | MSE@1e5 x0.72 W/T/L 39/36/34 Holm p 1.7e-01 | MSE@1e6 x1.00 W/T/L 43/36/30 Holm p 4.4e-01
+  esp_layout: F +0.0038 W/T/L 70/4/35 Holm p 7.9e-05 | MSE@1e3 x0.20 W/T/L 46/4/59 Holm p 7.0e-06 | MSE@1e4 x0.28 W/T/L 46/4/59 Holm p 7.0e-06 | MSE@1e5 x0.50 W/T/L 47/4/58 Holm p 9.6e-05 | MSE@1e6 x0.84 W/T/L 56/4/49 Holm p 1.5e-01
+  min_overhead: F +0.0028 W/T/L 42/47/20 Holm p 2.4e-03 | MSE@1e3 x0.94 W/T/L 44/47/18 Holm p 2.3e-02 | MSE@1e4 x1.01 W/T/L 44/47/18 Holm p 2.3e-02 | MSE@1e5 x1.11 W/T/L 46/47/16 Holm p 1.7e-03 | MSE@1e6 x1.16 W/T/L 47/47/15 Holm p 1.4e-05
+
+== separable (n = 33)
+method               F   regret   MSE/oracle@1e3   MSE/oracle@1e4   MSE/oracle@1e5   MSE/oracle@1e6
+model           0.9458   0.0051           151.91            42.84             7.37             2.00
+gbm-layout      0.9438   0.0071            97.87            28.23             5.51             1.87
+esp_layout      0.9438   0.0071           100.18            29.50             6.05             2.02
+min_overhead    0.9390   0.0119             9.82             3.65             1.55             1.22
+metis           0.9354   0.0155            21.72             7.57             2.60             1.57
+random          0.9383   0.0126           143.97            40.61             7.15             2.16
+find_cuts       0.9405   0.0103             1.12             1.10             1.07             1.16
+  paired vs find_cuts (F: +diff = method better; MSE: +log ratio = method lower MSE)
+  model: F +0.0052 W/T/L 21/0/12 Holm p 1.4e-02 | MSE@1e3 x0.01 W/T/L 0/0/33 Holm p 1.2e-09 | MSE@1e4 x0.03 W/T/L 0/0/33 Holm p 1.2e-09 | MSE@1e5 x0.14 W/T/L 0/0/33 Holm p 1.2e-09 | MSE@1e6 x0.58 W/T/L 9/0/24 Holm p 1.5e-04
+  gbm-layout: F +0.0033 W/T/L 19/0/14 Holm p 1.6e-01 | MSE@1e3 x0.01 W/T/L 0/0/33 Holm p 1.2e-09 | MSE@1e4 x0.04 W/T/L 0/0/33 Holm p 1.2e-09 | MSE@1e5 x0.19 W/T/L 0/0/33 Holm p 1.2e-09 | MSE@1e6 x0.62 W/T/L 10/0/23 Holm p 1.6e-03
+  esp_layout: F +0.0032 W/T/L 23/0/10 Holm p 9.3e-03 | MSE@1e3 x0.01 W/T/L 0/0/33 Holm p 1.2e-09 | MSE@1e4 x0.04 W/T/L 0/0/33 Holm p 1.2e-09 | MSE@1e5 x0.18 W/T/L 0/0/33 Holm p 1.2e-09 | MSE@1e6 x0.57 W/T/L 9/0/24 Holm p 4.5e-05
+  min_overhead: F -0.0016 W/T/L 16/0/17 Holm p 4.5e-01 | MSE@1e3 x0.11 W/T/L 2/0/31 Holm p 5.0e-06 | MSE@1e4 x0.30 W/T/L 2/0/31 Holm p 5.0e-06 | MSE@1e5 x0.69 W/T/L 4/0/29 Holm p 9.2e-05 | MSE@1e6 x0.94 W/T/L 11/0/22 Holm p 4.2e-01
+
+by family and width: summary.json

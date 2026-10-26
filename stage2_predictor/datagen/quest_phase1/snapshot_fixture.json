@@ -1,0 +1,28 @@
+{
+  "backend": "brisbane_class_fixture",
+  "calibration_date": "2026-07-18",
+  "comment": "Schema example with ibm_brisbane-class magnitudes. NOT a real snapshot: production datasets must use qiskit_bridge.fetch_snapshot() and archive the dated raw JSON (Roadmap SS2.1 reproducibility rule).",
+  "duration_1q_ns": 60.0,
+  "duration_2q_ns": 500.0,
+  "default_error_1q": 0.0002,
+  "default_error_2q": 0.007,
+  "errors_2q": {
+    "0_1": 0.006,
+    "1_2": 0.009,
+    "2_3": 0.007,
+    "3_4": 0.011,
+    "4_5": 0.0065,
+    "5_6": 0.008,
+    "6_7": 0.0075
+  },
+  "qubits": [
+    {"t1_us": 210.0, "t2_us": 140.0, "readout_p01": 0.012, "readout_p10": 0.024, "error_1q": 0.00021},
+    {"t1_us": 180.0, "t2_us": 95.0,  "readout_p01": 0.010, "readout_p10": 0.031, "error_1q": 0.00025},
+    {"t1_us": 240.0, "t2_us": 160.0, "readout_p01": 0.008, "readout_p10": 0.018, "error_1q": 0.00018},
+    {"t1_us": 150.0, "t2_us": 70.0,  "readout_p01": 0.020, "readout_p10": 0.040, "error_1q": 0.00035},
+    {"t1_us": 200.0, "t2_us": 130.0, "readout_p01": 0.011, "readout_p10": 0.022, "error_1q": 0.00022},
+    {"t1_us": 225.0, "t2_us": 150.0, "readout_p01": 0.009, "readout_p10": 0.020, "error_1q": 0.00019},
+    {"t1_us": 165.0, "t2_us": 85.0,  "readout_p01": 0.016, "readout_p10": 0.035, "error_1q": 0.00030},
+    {"t1_us": 195.0, "t2_us": 120.0, "readout_p01": 0.013, "readout_p10": 0.026, "error_1q": 0.00024}
+  ]
+}

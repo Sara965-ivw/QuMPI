@@ -1,0 +1,55 @@
+=== holdout3 stage=freeze 2026-10-16 11:49 device=cuda smoke=False
+    gt_size seed 0: 34 epochs, best early-stop Kendall 0.364
+    gt_size seed 1: 42 epochs, best early-stop Kendall 0.379
+    gt_size seed 2: 52 epochs, best early-stop Kendall 0.385
+    gt_size seed 3: 43 epochs, best early-stop Kendall 0.387
+    gt_size seed 4: 37 epochs, best early-stop Kendall 0.361
+    gt_size seed 0: 44 epochs, best early-stop Kendall 0.332
+    gt_size seed 1: 40 epochs, best early-stop Kendall 0.317
+    gt_size seed 2: 37 epochs, best early-stop Kendall 0.332
+    gt_size seed 3: 64 epochs, best early-stop Kendall 0.343
+    gt_size seed 4: 42 epochs, best early-stop Kendall 0.335
+
+model               split          circuits  Kendall [95% CI]         top-1 regret  top-1 hit
+esp_layout          sel_12_14          74  +0.340 [+0.273,+0.398]   0.0047        0.23
+esp_uniform         sel_12_14          74  -0.024 [-0.086,+0.036]   0.0108        0.05
+gt_size-layout      sel_12_14          74  +0.330 [+0.297,+0.359]   0.0048        0.25
+gt_size-layout_uniform sel_12_14          74  +0.183 [+0.149,+0.216]   0.0076        0.12
+  calibration control gt_size-layout_vs_gt_size-layout_uniform: n=74 diff=+0.197 p=8.65e-10 r=+0.83
+  calibration control esp_layout_vs_esp_uniform: n=74 diff=+0.528 p=7.83e-12 r=+0.92
+    gt_size seed 0: 44 epochs, best early-stop Kendall 0.421
+    gt_size seed 1: 22 epochs, best early-stop Kendall 0.395
+    gt_size seed 2: 29 epochs, best early-stop Kendall 0.406
+    gt_size seed 3: 46 epochs, best early-stop Kendall 0.426
+    gt_size seed 4: 33 epochs, best early-stop Kendall 0.404
+    gt_size seed 0: 21 epochs, best early-stop Kendall 0.324
+    gt_size seed 1: 52 epochs, best early-stop Kendall 0.339
+    gt_size seed 2: 30 epochs, best early-stop Kendall 0.335
+    gt_size seed 3: 21 epochs, best early-stop Kendall 0.324
+    gt_size seed 4: 38 epochs, best early-stop Kendall 0.346
+PART B FROZEN: gt_size-layout (5 seeds); record written; holdout3 not opened
+finished in 11.5 min
+=== holdout3 stage=evaluate 2026-10-16 12:00 device=cuda smoke=False
+weights verified against partB_record.json
+holdout3 circuits loaded: 143
+
+model               split          circuits  Kendall [95% CI]         top-1 regret  top-1 hit
+esp_layout          holdout3          143  +0.260 [+0.206,+0.313]   0.0059        0.26
+esp_uniform         holdout3          143  -0.019 [-0.077,+0.037]   0.0102        0.10
+gbm-layout          holdout3          143  +0.282 [+0.258,+0.304]   0.0053        0.34
+gt_size-layout      holdout3          143  +0.298 [+0.276,+0.321]   0.0048        0.31
+gt_size-layout_uniform holdout3          143  +0.206 [+0.185,+0.230]   0.0066        0.24
+metis               holdout3          143  +0.069 [+0.021,+0.121]   0.0094        0.18
+min_overhead        holdout3          143  +0.063 [+0.001,+0.128]   0.0076        0.24
+random              holdout3          143  +0.003 [-0.017,+0.022]   0.0093        0.10
+
+PRE-REGISTERED FAMILY R (gap-weighted tau, holdout3)
+  R1 gt_size-layout vs random: diff=+0.398 p=1.29e-17 r=+0.82
+  R2 gt_size-layout vs min_overhead  diff=+0.326 p=9.81e-12 Holm=2.94e-11 r=+0.66
+  R2 gt_size-layout vs metis         diff=+0.310 p=4.91e-12 Holm=1.97e-11 r=+0.67
+  R2 gt_size-layout vs gbm-layout    diff=+0.011 p=8.28e-01 Holm=8.28e-01 r=-0.02
+  R2 gt_size-layout vs esp_layout    diff=+0.061 p=3.47e-01 Holm=6.93e-01 r=+0.09
+EXPLORATORY
+  primary_vs_placement_only: diff=+0.121 p=1.31e-07 r=+0.51
+  esp_vs_esp_placement_only: diff=+0.365 p=4.67e-16 r=+0.79
+finished in 0.8 min

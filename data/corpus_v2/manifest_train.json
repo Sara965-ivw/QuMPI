@@ -1,0 +1,32 @@
+{
+ "split": "train",
+ "device": "fake_brisbane",
+ "calibration_date": "2025-02-26 14:33:06-05:00",
+ "transpiler_seed": 1234,
+ "opt_level": 2,
+ "settings": {
+  "g_max": 2,
+  "w_max": 1,
+  "max_width": 13,
+  "max_candidates": 20,
+  "oracle_fraction": 0.1,
+  "uncut_max_qubits": 13
+ },
+ "widths": [
+  6,
+  8,
+  10,
+  12,
+  14
+ ],
+ "seed_base": 10000,
+ "label_scheme": "v3",
+ "versions": {
+  "python": "3.12.3",
+  "numpy": "2.5.1",
+  "qiskit": "2.5.0",
+  "qiskit_aer": "0.17.2",
+  "qiskit_ibm_runtime": "0.47.0"
+ },
+ "n_circuits": 210
+}

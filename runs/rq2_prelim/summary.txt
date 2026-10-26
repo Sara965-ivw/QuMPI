@@ -1,0 +1,26 @@
+RQ2 preliminary: 576 timed runs, 24 workloads, ranks [4, 8]
+rho_max = max over working ranks of wait / busy (wait = elapsed - own task time); inversion = rho_max > 1
+Medians over workloads [95% bootstrap CI]; each workload = median of its repeats
+
+## 4 ranks
+policy                                           rho_max  inverted  idle>0              efficiency
+Fragment per rank group             1.26 [ 0.57,  1.71]       58%      4%     0.71 [0.68, 0.79]
+Equal task count (METIS-like)       0.30 [ 0.15,  0.76]       17%      0%     0.88 [0.82, 0.94]
+Cost-balanced static (LPT)          1.12 [ 0.62,  1.80]       58%      0%     0.73 [0.67, 0.86]
+Dynamic self-scheduling             1.28 [ 0.97,  2.01]       67%      0%     0.61 [0.57, 0.66]
+  makespan lpt / fragment: median ratio 0.998, Wilcoxon p=0.94 (Holm 0.94), rank-biserial -0.02
+  makespan lpt / count: median ratio 1.098, Wilcoxon p=0.0065 (Holm 0.013), rank-biserial +0.62
+  makespan dynamic / lpt: median ratio 1.274, Wilcoxon p=0.002 (Holm 0.006), rank-biserial +0.69
+
+## 8 ranks
+policy                                           rho_max  inverted  idle>0              efficiency
+Fragment per rank group             1.82 [ 0.85,  1.94]       67%      4%     0.67 [0.56, 0.76]
+Equal task count (METIS-like)       0.70 [ 0.33,  1.89]       42%      4%     0.75 [0.56, 0.92]
+Cost-balanced static (LPT)          1.92 [ 1.32,  3.66]       83%      4%     0.66 [0.55, 0.75]
+Dynamic self-scheduling             2.26 [ 1.85,  2.98]      100%      8%     0.46 [0.39, 0.51]
+  makespan lpt / fragment: median ratio 0.992, Wilcoxon p=0.62 (Holm 0.62), rank-biserial +0.12
+  makespan lpt / count: median ratio 1.075, Wilcoxon p=0.015 (Holm 0.03), rank-biserial +0.56
+  makespan dynamic / lpt: median ratio 1.391, Wilcoxon p=0.0031 (Holm 0.0094), rank-biserial +0.67
+
+H2 mechanism: Spearman(predicted imbalance, rho_max) = 0.49 (p=2.5e-27, n=432 static runs)
+Cost proxy validity: within-run Spearman(predicted cost, measured task time) median 0.71 (IQR 0.48 to 0.81)

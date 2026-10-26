@@ -1,0 +1,38 @@
+{
+ "rule": "keep gt_size-uncut unless an alternative is significantly better on sel_12_14 in gap-weighted tau (Wilcoxon, Holm over 3, alpha 0.05)",
+ "tests": {
+  "gt_size-layout": {
+   "n": 74,
+   "p": 1.8614036027471292e-09,
+   "effect_rb": 0.803963963963964,
+   "mean_diff": 0.21818544970584558,
+   "p_holm": 3.7228072054942584e-09
+  },
+  "gt_hybrid-uncut": {
+   "n": 74,
+   "p": 0.0009136690994166295,
+   "effect_rb": 0.4436036036036036,
+   "mean_diff": 0.04721102151984626,
+   "p_holm": 0.0009136690994166295
+  },
+  "gt_hybrid-layout": {
+   "n": 74,
+   "p": 3.0258109177319575e-10,
+   "effect_rb": 0.848204368752314,
+   "mean_diff": 0.1764130757062633,
+   "p_holm": 9.077432753195872e-10
+  }
+ },
+ "qualifying": [
+  "gt_size-layout",
+  "gt_hybrid-uncut",
+  "gt_hybrid-layout"
+ ],
+ "selected": "gt_size-layout",
+ "kendall_w_sel": {
+  "gt_size-uncut": 0.2297934657968747,
+  "gt_size-layout": 0.44797891550272034,
+  "gt_hybrid-uncut": 0.277004487316721,
+  "gt_hybrid-layout": 0.406206541503138
+ }
+}

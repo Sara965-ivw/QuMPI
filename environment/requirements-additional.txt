@@ -1,0 +1,7 @@
+# Packages used by later baseline, plotting, and test paths but absent from the
+# root requirements.txt. Recorded versions; validate as a coherent environment
+# before installing. This file is intentionally not an automated installer.
+scikit-learn==1.9.1
+pymetis==2025.2.2
+matplotlib==3.11.2
+pytest==9.1.1

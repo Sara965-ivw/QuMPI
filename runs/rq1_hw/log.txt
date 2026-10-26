@@ -1,0 +1,132 @@
+=== RQ1 hardware / Part B selection 2026-10-16 09:56 device=cuda smoke=False
+[uncut] train 94 val 24 sel_12_14 79 holdout2 (seen, exploratory) 34
+    gt_size seed 0: 30 epochs, best early-stop Kendall 0.296
+    gt_size seed 1: 42 epochs, best early-stop Kendall 0.303
+    gt_size seed 2: 56 epochs, best early-stop Kendall 0.314
+    gt_size seed 3: 51 epochs, best early-stop Kendall 0.339
+    gt_size seed 4: 22 epochs, best early-stop Kendall 0.251
+    gt_hybrid seed 0: 23 epochs, best early-stop Kendall 0.301
+    gt_hybrid seed 1: 24 epochs, best early-stop Kendall 0.316
+    gt_hybrid seed 2: 33 epochs, best early-stop Kendall 0.306
+    gt_hybrid seed 3: 35 epochs, best early-stop Kendall 0.316
+    gt_hybrid seed 4: 39 epochs, best early-stop Kendall 0.338
+[layout] train 94 val 24 sel_12_14 79 holdout2 (seen, exploratory) 34
+    gt_size seed 0: 34 epochs, best early-stop Kendall 0.364
+    gt_size seed 1: 42 epochs, best early-stop Kendall 0.380
+    gt_size seed 2: 47 epochs, best early-stop Kendall 0.388
+    gt_size seed 3: 43 epochs, best early-stop Kendall 0.391
+    gt_size seed 4: 37 epochs, best early-stop Kendall 0.361
+    gt_hybrid seed 0: 31 epochs, best early-stop Kendall 0.335
+    gt_hybrid seed 1: 35 epochs, best early-stop Kendall 0.411
+    gt_hybrid seed 2: 46 epochs, best early-stop Kendall 0.366
+    gt_hybrid seed 3: 62 epochs, best early-stop Kendall 0.402
+    gt_hybrid seed 4: 16 epochs, best early-stop Kendall 0.262
+[none] train 94 val 24 sel_12_14 79 holdout2 (seen, exploratory) 34
+    gt_size seed 0: 54 epochs, best early-stop Kendall 0.337
+    gt_size seed 1: 43 epochs, best early-stop Kendall 0.304
+    gt_size seed 2: 45 epochs, best early-stop Kendall 0.354
+    gt_size seed 3: 39 epochs, best early-stop Kendall 0.313
+    gt_size seed 4: 23 epochs, best early-stop Kendall 0.242
+    gt_hybrid seed 0: 25 epochs, best early-stop Kendall 0.312
+    gt_hybrid seed 1: 54 epochs, best early-stop Kendall 0.310
+    gt_hybrid seed 2: 56 epochs, best early-stop Kendall 0.331
+    gt_hybrid seed 3: 22 epochs, best early-stop Kendall 0.303
+    gt_hybrid seed 4: 18 epochs, best early-stop Kendall 0.261
+
+model               split          circuits  Kendall [95% CI]         top-1 regret  top-1 hit
+esp_layout          holdout2_seen      33  +0.254 [+0.106,+0.396]   0.0042        0.24
+esp_layout          sel_12_14          74  +0.340 [+0.273,+0.398]   0.0047        0.23
+esp_layout          val                24  +0.240 [+0.143,+0.346]   0.0026        0.25
+gbm-layout          holdout2_seen      33  +0.230 [+0.176,+0.282]   0.0052        0.30
+gbm-layout          sel_12_14          74  +0.267 [+0.244,+0.292]   0.0051        0.16
+gbm-layout          val                24  +0.335 [+0.291,+0.378]   0.0029        0.17
+gbm-none            holdout2_seen      33  +0.218 [+0.160,+0.271]   0.0057        0.30
+gbm-none            sel_12_14          74  +0.159 [+0.129,+0.189]   0.0072        0.16
+gbm-none            val                24  +0.250 [+0.215,+0.283]   0.0033        0.17
+gbm-uncut           holdout2_seen      33  +0.091 [+0.026,+0.156]   0.0062        0.21
+gbm-uncut           sel_12_14          74  +0.147 [+0.117,+0.172]   0.0059        0.15
+gbm-uncut           val                24  +0.256 [+0.195,+0.306]   0.0023        0.17
+gt_hybrid-layout    holdout2_seen      33  +0.263 [+0.203,+0.321]   0.0057        0.28
+gt_hybrid-layout    sel_12_14          74  +0.299 [+0.272,+0.327]   0.0062        0.20
+gt_hybrid-layout    val                24  +0.355 [+0.310,+0.402]   0.0023        0.23
+gt_hybrid-none      holdout2_seen      33  +0.187 [+0.126,+0.241]   0.0083        0.22
+gt_hybrid-none      sel_12_14          74  +0.200 [+0.170,+0.229]   0.0067        0.14
+gt_hybrid-none      val                24  +0.304 [+0.255,+0.352]   0.0023        0.21
+gt_hybrid-uncut     holdout2_seen      33  +0.213 [+0.156,+0.269]   0.0078        0.30
+gt_hybrid-uncut     sel_12_14          74  +0.200 [+0.166,+0.232]   0.0072        0.17
+gt_hybrid-uncut     val                24  +0.315 [+0.265,+0.365]   0.0027        0.23
+gt_size-layout      holdout2_seen      33  +0.306 [+0.254,+0.356]   0.0066        0.29
+gt_size-layout      sel_12_14          74  +0.329 [+0.297,+0.358]   0.0047        0.25
+gt_size-layout      val                24  +0.377 [+0.336,+0.419]   0.0023        0.29
+gt_size-none        holdout2_seen      33  +0.199 [+0.145,+0.253]   0.0093        0.19
+gt_size-none        sel_12_14          74  +0.165 [+0.131,+0.197]   0.0080        0.12
+gt_size-none        val                24  +0.310 [+0.261,+0.361]   0.0026        0.23
+gt_size-uncut       holdout2_seen      33  +0.156 [+0.096,+0.214]   0.0101        0.22
+gt_size-uncut       sel_12_14          74  +0.167 [+0.134,+0.199]   0.0076        0.17
+gt_size-uncut       val                24  +0.301 [+0.253,+0.352]   0.0025        0.23
+metis               holdout2_seen      33  +0.129 [+0.033,+0.224]   0.0058        0.21
+metis               sel_12_14          74  +0.187 [+0.123,+0.251]   0.0062        0.11
+metis               val                24  +0.042 [-0.056,+0.141]   0.0075        0.04
+min_overhead        holdout2_seen      33  +0.111 [+0.024,+0.203]   0.0065        0.21
+min_overhead        sel_12_14          74  +0.169 [+0.104,+0.233]   0.0066        0.11
+min_overhead        val                24  +0.029 [-0.071,+0.132]   0.0035        0.08
+random              holdout2_seen      33  +0.005 [-0.052,+0.065]   0.0082        0.14
+random              sel_12_14          74  -0.018 [-0.044,+0.007]   0.0104        0.08
+random              val                24  +0.012 [-0.036,+0.059]   0.0052        0.07
+
+model               split          gap-weighted tau [95% CI]
+esp_layout          holdout2_seen  +0.361 [+0.186,+0.527]
+esp_layout          sel_12_14      +0.491 [+0.403,+0.569]
+gbm-layout          holdout2_seen  +0.340 [+0.278,+0.400]
+gbm-layout          sel_12_14      +0.364 [+0.331,+0.397]
+gbm-none            holdout2_seen  +0.297 [+0.231,+0.360]
+gbm-none            sel_12_14      +0.220 [+0.181,+0.257]
+gbm-uncut           holdout2_seen  +0.162 [+0.083,+0.243]
+gbm-uncut           sel_12_14      +0.178 [+0.141,+0.212]
+gt_hybrid-layout    holdout2_seen  +0.357 [+0.286,+0.423]
+gt_hybrid-layout    sel_12_14      +0.406 [+0.369,+0.443]
+gt_hybrid-none      holdout2_seen  +0.284 [+0.211,+0.349]
+gt_hybrid-none      sel_12_14      +0.275 [+0.234,+0.312]
+gt_hybrid-uncut     holdout2_seen  +0.322 [+0.253,+0.389]
+gt_hybrid-uncut     sel_12_14      +0.277 [+0.235,+0.318]
+gt_size-layout      holdout2_seen  +0.402 [+0.340,+0.461]
+gt_size-layout      sel_12_14      +0.448 [+0.408,+0.484]
+gt_size-none        holdout2_seen  +0.282 [+0.215,+0.348]
+gt_size-none        sel_12_14      +0.240 [+0.197,+0.280]
+gt_size-uncut       holdout2_seen  +0.237 [+0.164,+0.312]
+gt_size-uncut       sel_12_14      +0.230 [+0.187,+0.272]
+metis               holdout2_seen  +0.220 [+0.111,+0.333]
+metis               sel_12_14      +0.278 [+0.201,+0.353]
+min_overhead        holdout2_seen  +0.117 [+0.003,+0.233]
+min_overhead        sel_12_14      +0.205 [+0.123,+0.286]
+random              holdout2_seen  +0.024 [-0.045,+0.093]
+random              sel_12_14      -0.041 [-0.077,-0.008]
+
+hardware question (layout vs none / uncut), paired Wilcoxon over circuits
+  sel_12_14|gt_size-layout_vs_gt_size-none|kendall_w             n=74  diff=+0.208 p=1.97e-10 r=+0.86
+  sel_12_14|gt_size-layout_vs_gt_size-none|kendall               n=74  diff=+0.163 p=2.09e-10 r=+0.85
+  sel_12_14|gt_size-layout_vs_gt_size-uncut|kendall_w            n=74  diff=+0.218 p=1.86e-09 r=+0.80
+  sel_12_14|gt_size-layout_vs_gt_size-uncut|kendall              n=74  diff=+0.161 p=1.93e-09 r=+0.81
+  sel_12_14|gt_hybrid-layout_vs_gt_hybrid-none|kendall_w         n=74  diff=+0.132 p=2.18e-09 r=+0.81
+  sel_12_14|gt_hybrid-layout_vs_gt_hybrid-none|kendall           n=74  diff=+0.099 p=9.93e-10 r=+0.82
+  sel_12_14|gt_hybrid-layout_vs_gt_hybrid-uncut|kendall_w        n=74  diff=+0.129 p=2.35e-07 r=+0.69
+  sel_12_14|gt_hybrid-layout_vs_gt_hybrid-uncut|kendall          n=74  diff=+0.099 p=8.87e-09 r=+0.77
+  sel_12_14|gbm-layout_vs_gbm-none|kendall_w                     n=74  diff=+0.144 p=1.91e-04 r=+0.50
+  sel_12_14|gbm-layout_vs_gbm-none|kendall                       n=74  diff=+0.108 p=8.88e-04 r=+0.44
+  sel_12_14|gbm-layout_vs_gbm-uncut|kendall_w                    n=74  diff=+0.186 p=3.90e-05 r=+0.56
+  sel_12_14|gbm-layout_vs_gbm-uncut|kendall                      n=74  diff=+0.120 p=9.68e-04 r=+0.45
+  holdout2_seen|gt_size-layout_vs_gt_size-none|kendall_w         n=33  diff=+0.119 p=3.78e-03 r=+0.57
+  holdout2_seen|gt_size-layout_vs_gt_size-none|kendall           n=33  diff=+0.108 p=5.33e-03 r=+0.56
+  holdout2_seen|gt_size-layout_vs_gt_size-uncut|kendall_w        n=33  diff=+0.164 p=1.14e-03 r=+0.66
+  holdout2_seen|gt_size-layout_vs_gt_size-uncut|kendall          n=33  diff=+0.151 p=1.91e-03 r=+0.63
+  holdout2_seen|gt_hybrid-layout_vs_gt_hybrid-none|kendall_w     n=33  diff=+0.073 p=1.37e-02 r=+0.49
+  holdout2_seen|gt_hybrid-layout_vs_gt_hybrid-none|kendall       n=33  diff=+0.076 p=6.09e-03 r=+0.55
+  holdout2_seen|gt_hybrid-layout_vs_gt_hybrid-uncut|kendall_w    n=33  diff=+0.035 p=6.11e-01 r=+0.10
+  holdout2_seen|gt_hybrid-layout_vs_gt_hybrid-uncut|kendall      n=33  diff=+0.049 p=3.13e-01 r=+0.20
+  holdout2_seen|gbm-layout_vs_gbm-none|kendall_w                 n=33  diff=+0.044 p=6.66e-01 r=-0.09
+  holdout2_seen|gbm-layout_vs_gbm-none|kendall                   n=33  diff=+0.012 p=5.18e-01 r=-0.13
+  holdout2_seen|gbm-layout_vs_gbm-uncut|kendall_w                n=33  diff=+0.178 p=2.55e-02 r=+0.46
+  holdout2_seen|gbm-layout_vs_gbm-uncut|kendall                  n=33  diff=+0.140 p=4.15e-02 r=+0.42
+
+PART B SELECTED PRIMARY MODEL: gt_size-layout  (qualifying alternatives: ['gt_size-layout', 'gt_hybrid-uncut', 'gt_hybrid-layout'])
+finished in 24.1 min -> /mnt/c/Users/alshe/OneDrive/Desktop/thesis papers/runs/rq1_hw

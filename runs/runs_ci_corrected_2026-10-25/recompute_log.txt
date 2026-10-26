@@ -1,0 +1,9 @@
+phase2: 2090 rows, 18 model-split groups; max |recomputed original - summary.csv| = 0.00e+00
+rq1_select: 4292 rows, 27 model-split groups; max |recomputed original - summary.csv| = 0.00e+00
+rq1_final_gt_size: 3631 rows, 29 model-split groups; max |recomputed original - summary.csv| = 0.00e+00
+rq1_final_gt_hybrid: 3631 rows, 29 model-split groups; max |recomputed original - summary.csv| = 0.00e+00
+rq1_hw: 7897 rows, 52 model-split groups; max |recomputed original - summary.csv| = 0.00e+00
+rq1_h3: 3432 rows, 8 model-split groups; max |recomputed original - summary.csv| = 0.00e+00
+rq1_delta: 6407 rows, 44 model-split groups; max |recomputed original - summary.csv| = 0.00e+00
+rq1_agg: 2320 rows, 12 model-split groups; max |recomputed original - summary.csv| = 0.00e+00
+rq1_curve: 4514 rows, 13 model-split groups; no summary.csv to check against

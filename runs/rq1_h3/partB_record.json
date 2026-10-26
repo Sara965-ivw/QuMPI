@@ -1,0 +1,51 @@
+{
+ "primary": "gt_size-layout",
+ "control": "gt_size-layout_uniform",
+ "seeds": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "hp": {
+  "d": 64,
+  "heads": 4,
+  "layers": 3,
+  "dropout": 0.1,
+  "lr": 0.0003,
+  "weight_decay": 0.0001,
+  "epochs": 80,
+  "patience": 15,
+  "batch_circuits": 8,
+  "tau": 0.5
+ },
+ "git_commit_before": "80e4a90",
+ "frozen_at": "2026-10-16 11:54:06",
+ "weights": {
+  "gt_size-layout_seed0.pt": "7f6f6e75b5156af75c7291461546f0b82c395c51e589ee200b4018a98553c0b5",
+  "gt_size-layout_seed1.pt": "a96d3b51a53e67a06a9dd0e94e92dfa77928d82dfa412b8a6fd21e4ce422c0d3",
+  "gt_size-layout_seed2.pt": "ebe2d9bfa9972ff83e0b4a280b9b0fc5151a2ed1a283df9acbc83532d3abae36",
+  "gt_size-layout_seed3.pt": "28f918a84544a66d4b5280f6d0c9f3c51d7abc9cd942e4b4de2eef9fbf407f7d",
+  "gt_size-layout_seed4.pt": "695afc5b96106fe1085472bd32456ae700ef199758922020835b945fd2899cc3",
+  "gt_size-layout_uniform_seed0.pt": "27d468720c2a7ed7607ef2b95862bf7722efeb579d67ce1a105b8bfd6706886b",
+  "gt_size-layout_uniform_seed1.pt": "6358f97bdab12f9467b847486322495434e16019042d4cfb64a97d4ee16870ed",
+  "gt_size-layout_uniform_seed2.pt": "092e39833769dd0b1803b97b970efe913c935aca5461aa3b37c15a6e96dd38ca",
+  "gt_size-layout_uniform_seed3.pt": "f207e97920b56adc98be64ae8970975a35750db38cf16b732700e7202f98a663",
+  "gt_size-layout_uniform_seed4.pt": "6c855180a273ab6756e4dd772e8292c63d59036433d08b0ba670f76a186f1bf6"
+ },
+ "calibration_control_sel_12_14": {
+  "gt_size-layout_vs_gt_size-layout_uniform": {
+   "n": 74,
+   "p": 8.649579589488218e-10,
+   "effect_rb": 0.8259903739355794,
+   "mean_diff": 0.19666717892389585
+  },
+  "esp_layout_vs_esp_uniform": {
+   "n": 74,
+   "p": 7.825421950192808e-12,
+   "effect_rb": 0.9215105516475379,
+   "mean_diff": 0.5279431720374472
+  }
+ }
+}

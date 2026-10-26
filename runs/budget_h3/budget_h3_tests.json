@@ -1,0 +1,44 @@
+{
+ "n_circuits": 143,
+ "B1": {
+  "hypothesis": "B1: optimal cut changes between N=1e3 and N=1e6",
+  "n": 143,
+  "k": 33,
+  "share": 0.23076923076923078,
+  "boot_lo": 0.16083916083916083,
+  "boot_hi": 0.3006993006993007,
+  "wilson_lo": 0.16930335348150158,
+  "wilson_hi": 0.30632157842383034,
+  "floor": 0.2,
+  "supported": false
+ },
+ "B2": {
+  "hypothesis": "B2: minimum overhead >= 1.1x optimal MSE at N=1e6",
+  "n": 143,
+  "k": 23,
+  "share": 0.16083916083916083,
+  "boot_lo": 0.1048951048951049,
+  "boot_hi": 0.22377622377622378,
+  "wilson_lo": 0.1096317241647016,
+  "wilson_hi": 0.22979189135240483,
+  "floor": 0.2,
+  "supported": false
+ },
+ "B3": {
+  "hypothesis": "B3: highest fidelity >= 1.1x optimal MSE at N=1e3",
+  "n": 143,
+  "k": 90,
+  "share": 0.6293706293706294,
+  "boot_lo": 0.5524475524475524,
+  "boot_hi": 0.7062937062937062,
+  "wilson_lo": 0.547795695691857,
+  "wilson_hi": 0.7041767396263601,
+  "floor": 0.2,
+  "supported": true
+ },
+ "diagnostics": {
+  "negative_variance_terms": 0,
+  "mean_candidates": 11.307692307692308,
+  "mean_basket": 45.6993006993007
+ }
+}

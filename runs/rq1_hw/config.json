@@ -1,0 +1,35 @@
+{
+ "hp": {
+  "d": 64,
+  "heads": 4,
+  "layers": 3,
+  "dropout": 0.1,
+  "lr": 0.0003,
+  "weight_decay": 0.0001,
+  "epochs": 80,
+  "patience": 15,
+  "batch_circuits": 8,
+  "tau": 0.5
+ },
+ "seeds": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "configs": {
+  "uncut": "both",
+  "layout": "layout",
+  "none": "none"
+ },
+ "models": [
+  "gt_size",
+  "gt_hybrid"
+ ],
+ "device": "cuda",
+ "torch": "2.13.0+cu130",
+ "python": "3.12.3",
+ "git_commit": "a983aa7",
+ "smoke": false
+}
