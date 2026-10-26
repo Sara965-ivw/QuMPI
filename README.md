@@ -1,8 +1,7 @@
 # QuMPI
 
-**QuMPI: AI-driven quantum circuit cutting for MPI-distributed NISQ computing**
+**AI-driven quantum circuit cutting for MPI-distributed NISQ computing**
 
-This release candidate packages the existing QUEST-MPI research implementation and its frozen RQ1 / preliminary RQ2 artifacts under the new repository name **QuMPI**. It is a research handoff and publication-preparation build, not evidence that every planned stage is implemented or that a fresh machine has already reproduced the results.
 
 ## Research status
 
