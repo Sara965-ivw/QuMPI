@@ -33,3 +33,6 @@ runs/*
 data/*
 !data/corpus_v2/
 !data/corpus_v2/**
+data/corpus_v4/
+runs/paper_budget/**/*.pt
+runs/paper_budget/**/per_candidate*.csv
