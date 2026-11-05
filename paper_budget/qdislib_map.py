@@ -77,3 +77,25 @@ def cut_circuit(circ, result):
 def map_qdislib(circ, result):
     """The same Mapping as for find_cuts: representable, reason, home_a, widths, ..."""
     return map_result(circ, cut_circuit(circ, result), {})
+
+
+def pieces_after_gate_cuts(circ, gate_cut_indices):
+    """Gate cuts only: logical qubits per piece (widest first) after removing the cut gates,
+    and the cut gates whose two qubits stay in one piece (they separate nothing)."""
+    parent = list(range(circ.n_qubits))
+
+    def find(x):
+        while parent[x] != x:
+            parent[x] = parent[parent[x]]
+            x = parent[x]
+        return x
+
+    cut = set(gate_cut_indices)
+    for i, g in enumerate(circ.gates):
+        if g.n_qubits == 2 and i not in cut:
+            parent[find(g.qubits[0])] = find(g.qubits[1])
+    sizes = {}
+    for q in range(circ.n_qubits):
+        sizes[find(q)] = sizes.get(find(q), 0) + 1
+    internal = sorted(i for i in cut if find(circ.gates[i].qubits[0]) == find(circ.gates[i].qubits[1]))
+    return sorted(sizes.values(), reverse=True), internal

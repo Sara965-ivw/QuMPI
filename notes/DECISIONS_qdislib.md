@@ -28,3 +28,13 @@ Taken by Sara Alshehri (recommended options accepted).
   Justification: 6 CX cuts give gamma^2 = 9^6 ~ 5.3e5; the largest find_cuts overhead on the
   same circuits was 9^5 = 59049.
 - A Qdislib call that returned an error is never read as "no cut".
+
+## Amendment 2 (5 Nov 2026, after a 3-circuit test run, before any label was read)
+- The 3-circuit test showed SparseCut cutting a gate inside one piece ("not a separating cut"),
+  which the code had recorded as an error and counted against SparseCut in S3. Corrected:
+  * gate cuts only: the logical pieces are computed first; a piece wider than 13 qubits is
+    too_wide and the search continues (next width or next max_cuts);
+  * a gate cut that separates nothing, inside pieces that all fit, is unrepresentable (Q3 bound);
+  * a mixed cut with a logical fragment wider than 13 is too_wide, not unrepresentable;
+  * errors are reported separately and never counted for or against a prediction.
+- The 3-circuit outputs were deleted and the selection rerun from scratch.

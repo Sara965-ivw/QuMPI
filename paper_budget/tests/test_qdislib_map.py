@@ -58,3 +58,16 @@ def test_observed_wire_only_cut_is_flagged_not_dropped():
 def test_mixed_output_is_read():
     gates, wires = M.normalise({"gate": ["CX_10"], "wire": [["CX_9", "CX_11"]]})
     assert gates == ["CX_10"] and wires == [("CX_9", "CX_11")]
+
+
+def test_pieces_after_the_bridge_cut():
+    assert M.pieces_after_gate_cuts(smoke(), [10]) == ([3, 3], [])
+
+
+def test_cut_inside_a_cluster_separates_nothing():
+    assert M.pieces_after_gate_cuts(smoke(), [6]) == ([6], [6])
+
+
+def test_internal_cut_is_found_next_to_a_separating_one():
+    # CX_7 (gate 6) is internal: qubits 0 and 1 stay joined through CX_12 (gate 11)
+    assert M.pieces_after_gate_cuts(smoke(), [10, 6]) == ([3, 3], [6])
