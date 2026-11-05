@@ -38,3 +38,9 @@ Taken by Sara Alshehri (recommended options accepted).
   * a mixed cut with a logical fragment wider than 13 is too_wide, not unrepresentable;
   * errors are reported separately and never counted for or against a prediction.
 - The 3-circuit outputs were deleted and the selection rerun from scratch.
+
+## Decision (5 Nov 2026): fixed Python hash seed
+- From now on every labelling or analysis run is launched with PYTHONHASHSEED=0, so that
+  layout ties are broken identically; this applies before holdout4 is generated.
+- Existing labels are kept (both layouts are physically valid); the label noise floor will be
+  measured by relabelling a sample under two hash seeds.
