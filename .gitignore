@@ -37,3 +37,4 @@ data/corpus_v4/
 runs/paper_budget/**/*.pt
 runs/paper_budget/**/per_candidate*.csv
 runs/paper_budget/obs_structure/
+runs/paper_budget/compare/
