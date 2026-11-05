@@ -20,3 +20,11 @@ Taken by Sara Alshehri (recommended options accepted).
   These are properties of the released tool; it is used unmodified.
 - Pilot first: 3 circuits, width 13, seed 1234, SparseCut k=1, to measure call times
   before the full grid (61 calls per circuit).
+
+## Amendment 1 (5 Nov 2026, before any Qdislib cut was selected or labelled)
+- A cut with more than 6 gate cuts is not checked for routed width (6^g QPD templates;
+  the October find_cuts search hung at small widths). It is recorded as too_many_cuts and
+  treated like an unrepresentable cut (Q3): optimistic bound MSE >= (gamma^2 - 1) / N.
+  Justification: 6 CX cuts give gamma^2 = 9^6 ~ 5.3e5; the largest find_cuts overhead on the
+  same circuits was 9^5 = 59049.
+- A Qdislib call that returned an error is never read as "no cut".
