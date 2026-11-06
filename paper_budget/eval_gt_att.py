@@ -147,7 +147,8 @@ def main():
         for j in PRIMARY:
             d = L[ref][:, j] - L["M2"][:, j]                    # > 0: M2 better
             tests.append({"ref": ref, "budget": BUDGETS[j], "ratio_M2_over_ref": float(np.exp(-d.mean())),
-                          "ci95": boot_ratio(L["M2"], L[ref])[:, j].tolist(), "p": wilcoxon_p(d)})
+                          "ci95": boot_ratio(L["M2"], L[ref])[:, j].tolist(), "p": wilcoxon_p(d),
+                          "n_differ": int(np.sum(np.abs(d) > 1e-12))})
             ps.append(tests[-1]["p"])
     for t, q in zip(tests, holm(ps)):
         t["p_holm"] = float(q)
@@ -196,7 +197,8 @@ def main():
     print("\nprimary tests (ratio = gm regret M2 / reference; < 1 = M2 better)")
     for t in tests:
         print(f"  M2 vs {t['ref']} at {t['budget']:.0e}: ratio {t['ratio_M2_over_ref']:.4f} "
-              f"CI [{t['ci95'][0]:.4f}, {t['ci95'][1]:.4f}]  p {t['p']:.2e}  Holm {t['p_holm']:.2e}")
+              f"CI [{t['ci95'][0]:.4f}, {t['ci95'][1]:.4f}]  p {t['p']:.2e}  Holm {t['p_holm']:.2e}  "
+              f"circuits with different choices {t['n_differ']}/{len(C)}")
     print(f"\nH1 {res['H1_met']}  H2 {res['H2_met']}  H3 {res['H3_met']}  H4 {res['H4_met']}")
     print(f"written {out}")
 
