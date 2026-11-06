@@ -79,7 +79,7 @@ def train_one(name, seed, train, val, ab, hp, device, log):
             if not torch.isfinite(loss):
                 raise FloatingPointError(f"non-finite loss on {c.cid}")
             (loss / hp["batch_circuits"]).backward()
-            tr_loss.append(float(loss))
+            tr_loss.append(loss.item())
             if k % hp["batch_circuits"] == 0 or k == len(train):
                 torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
                 opt.step()
