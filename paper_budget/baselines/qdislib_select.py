@@ -8,6 +8,10 @@ from max_cuts 1 up. Feasibility uses the same functions as find_cuts' find_feasi
 A cut the labellers cannot represent, or with more than MAX_GATE_CUTS gate cuts
 (amendment 1), stops the search for that seed and is kept for the optimistic bound.
 No label is read here: S1-S3 are structural.
+
+Holdout4 (11 Nov 2026, notes/PREDICTIONS_compare_holdout4.md): --split holdout4 reads and writes
+runs/paper_budget/qdislib_holdout4/{cuts,select}. S1-S3 were holdout3 predictions, so for holdout4
+only the status counts are printed. The default (--split holdout3) is unchanged.
 """
 import argparse
 import csv
@@ -30,8 +34,13 @@ from quest_phase1.multipiece import multipiece_fits  # noqa: E402
 
 SEEDS = (1234, 2027, 3141, 4242, 5555)
 MAX_GATE_CUTS = 6            # amendment 1: 6^g QPD templates; beyond this, bound only
-CUTS = RUNS / "qdislib" / "cuts"
-OUT = RUNS / "qdislib" / "select"
+OUT = RUNS / "qdislib" / "select"             # holdout3 (October); used by summarise()
+
+
+def dirs(split: str):
+    """(cuts, select) folders: the October layout for holdout3, qdislib_<split>/ otherwise."""
+    base = RUNS / ("qdislib" if split == "holdout3" else f"qdislib_{split}")
+    return base / "cuts", base / "select"
 
 
 class CircuitTimeout(Exception):
@@ -110,17 +119,18 @@ def select(ctx, circ, calls, mode, order_key, cache):
     return {"status": "infeasible", "tried": tried}
 
 
-def one_circuit(cid, time_limit):
+def one_circuit(cid, time_limit, split="holdout3"):
     from quest_phase1.labeling_v2 import make_device
     signal.signal(signal.SIGALRM, _alarm)
     signal.alarm(time_limit)
     t0 = time.time()
     row = {"cid": cid, "default": {}, "sparsecut": None, "status": "done"}
+    cuts_dir, out_dir = dirs(split)
     try:
         ctx = make_device(DEVICE, seed=1234)
-        d = json.loads((DATA_V2 / "holdout3" / f"{cid}.json").read_text())
+        d = json.loads((DATA_V2 / split / f"{cid}.json").read_text())
         circ = rebuild_circuit(d["circuit_meta"])
-        calls = json.loads((CUTS / f"{cid}.json").read_text())["calls"]
+        calls = json.loads((cuts_dir / f"{cid}.json").read_text())["calls"]
         cache = {}
         for s in SEEDS:
             mine = [c for c in calls if c["mode"] == "default" and c["seed"] == s]
@@ -134,12 +144,26 @@ def one_circuit(cid, time_limit):
     finally:
         signal.alarm(0)
     row["wall_s"] = round(time.time() - t0, 1)
-    (OUT / f"{cid}.json").write_text(json.dumps(row, indent=1, default=str))
+    (out_dir / f"{cid}.json").write_text(json.dumps(row, indent=1, default=str))
     return cid, row["status"], row["wall_s"]
 
 
 def _run(args):
     return one_circuit(*args)
+
+
+def status_counts(split: str):
+    """Counts only (no prediction is judged): used for splits other than holdout3."""
+    rows = [json.loads(p.read_text()) for p in sorted(dirs(split)[1].glob(f"{split}_*.json"))]
+    print(f"\ncircuits selected: {len(rows)}  not done: {[r['cid'] for r in rows if r['status'] != 'done']}")
+    st = {}
+    for r in rows:
+        if r["status"] == "done":
+            for v in r["default"].values():
+                st[v["status"]] = st.get(v["status"], 0) + 1
+    print(f"default find_cut, (circuit, seed) pairs by status: {st}")
+    sp = [r["sparsecut"]["status"] for r in rows if r["status"] == "done"]
+    print(f"SparseCut statuses: { {x: sp.count(x) for x in sorted(set(sp))} }")
 
 
 def summarise():
@@ -191,22 +215,24 @@ def summarise():
 
 
 def main():
-    assert os.environ.get("QUEST_UNBLIND") == "holdout3", "set QUEST_UNBLIND=holdout3"
     ap = argparse.ArgumentParser()
+    ap.add_argument("--split", default="holdout3", choices=("holdout3", "holdout4"))
     ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--limit", type=int, default=None)
     ap.add_argument("--time-limit", type=int, default=1800, help="seconds per circuit")
     ap.add_argument("--summary-only", action="store_true")
     args = ap.parse_args()
-    OUT.mkdir(parents=True, exist_ok=True)
+    assert os.environ.get("QUEST_UNBLIND") == args.split, f"set QUEST_UNBLIND={args.split}"
+    cuts_dir, out_dir = dirs(args.split)
+    out_dir.mkdir(parents=True, exist_ok=True)
     if not args.summary_only:
-        cids = sorted(p.stem for p in CUTS.glob("holdout3_*.json"))[:args.limit]
-        todo = [c for c in cids if not (OUT / f"{c}.json").exists()]
+        cids = sorted(p.stem for p in cuts_dir.glob(f"{args.split}_*.json"))[:args.limit]
+        todo = [c for c in cids if not (out_dir / f"{c}.json").exists()]
         print(f"{len(todo)} of {len(cids)} circuits to select ({len(cids) - len(todo)} already done)")
         with Pool(args.workers) as pool:
-            for cid, st, sec in pool.imap_unordered(_run, [(c, args.time_limit) for c in todo]):
+            for cid, st, sec in pool.imap_unordered(_run, [(c, args.time_limit, args.split) for c in todo]):
                 print(f"{cid}: {st} ({sec} s)", flush=True)
-    summarise()
+    summarise() if args.split == "holdout3" else status_counts(args.split)
 
 
 if __name__ == "__main__":

@@ -58,10 +58,11 @@ def wilcoxon_p(d):
     return float(stats.wilcoxon(d).pvalue) if len(d) >= 5 and np.any(np.abs(d) > TIE) else float("nan")
 
 
-def qdislib_cut(cid, ideal):
-    """Seed-averaged (MSE vector, fidelity or nan, bound used?) or (None, reason)."""
-    sel = json.loads((QD_SEL / f"{cid}.json").read_text())
-    labs = json.loads((QD_LAB / f"{cid}.json").read_text())
+def qdislib_cut(cid, ideal, sel_dir=None, lab_dir=None):
+    """Seed-averaged (MSE vector, fidelity or nan, bound used?) or (None, reason).
+    sel_dir / lab_dir default to the October holdout3 folders (QD_SEL, QD_LAB)."""
+    sel = json.loads(((sel_dir or QD_SEL) / f"{cid}.json").read_text())
+    labs = json.loads(((lab_dir or QD_LAB) / f"{cid}.json").read_text())
     if labs["status"] != "done":
         return None, f"labelling {labs['status']}"
     rows, fids, bound = [], [], False

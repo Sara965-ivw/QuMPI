@@ -18,6 +18,12 @@ Per circuit:
      exceeds it is recorded (<cid>.timeout.txt) and the run continues. Errors are
      recorded in <cid>.error.txt. A rerun retries only unfinished circuits.
 Only counts and timing are printed; fidelities are read by findcuts_compare.py.
+
+Holdout4 (11 Nov 2026, notes/PREDICTIONS_compare_holdout4.md): --split holdout4 --corpus <dir>
+--selection <list>. With the defaults (--split holdout3, <split>_selection.json) the same
+circuits are selected and labelled as in October (config.json records a few extra fields);
+the labelling itself (label_one) is unchanged. holdout4 requires PYTHONHASHSEED=0, because the
+multipiece labeller breaks layout ties by hash order (notes/RESULTS_findcuts_relabel.md).
 """
 import argparse
 import json
@@ -118,16 +124,24 @@ def main():
     if "--one" in sys.argv:
         return worker(sys.argv[1:])
     ap = argparse.ArgumentParser()
-    ap.add_argument("--holdout3", required=True)
+    ap.add_argument("--holdout3", "--corpus", dest="holdout3", required=True,
+                    help="corpus directory of the split (corpus_v2/holdout3 or corpus_v2/holdout4)")
+    ap.add_argument("--split", default="holdout3", choices=("holdout3", "holdout4"))
+    ap.add_argument("--selection", default=None,
+                    help="JSON with a 'circuits' list (default: <corpus parent>/<split>_selection.json)")
     ap.add_argument("--out", required=True)
     ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--time-limit", type=int, default=1800, help="seconds per circuit (fix C)")
     ap.add_argument("--only", default=None, help="comma-separated circuit ids (testing)")
     a = ap.parse_args()
-    if os.environ.get("QUEST_UNBLIND") != "holdout3":
-        raise SystemExit("holdout3 is guarded: set QUEST_UNBLIND=holdout3 (exploratory, decision A1)")
+    if os.environ.get("QUEST_UNBLIND") != a.split:
+        raise SystemExit(f"{a.split} is guarded: set QUEST_UNBLIND={a.split} (exploratory)")
+    if a.split != "holdout3" and os.environ.get("PYTHONHASHSEED") != "0":
+        raise SystemExit("export PYTHONHASHSEED=0 first (deterministic multipiece layouts)")
     h3 = Path(a.holdout3)
-    chosen = sorted(json.loads((h3.parent / "holdout3_selection.json").read_text())["circuits"])
+    assert h3.name == a.split, f"--corpus {h3} does not match --split {a.split}"
+    sel = Path(a.selection) if a.selection else h3.parent / f"{a.split}_selection.json"
+    chosen = sorted(json.loads(sel.read_text())["circuits"])
     if a.only:
         chosen = [c for c in chosen if c in set(a.only.split(","))]
     out = Path(a.out); out.mkdir(parents=True, exist_ok=True)
@@ -135,7 +149,9 @@ def main():
         "decisions": "A1 (d) exploratory on holdout3; A2 (a); A3 (a) width 13, defaults, seed 1234; "
                      "A4 (a) no-cut piecewise; A5 (a) with fix A: lower width only for a too-wide "
                      "subcircuit; A7 (b) fix B: each subcircuit simulated on its own; fix C: time limit",
+        "split": a.split, "selection": str(sel), "n_circuits": len(chosen),
         "time_limit_s": a.time_limit, "workers": a.workers,
+        "pythonhashseed": os.environ.get("PYTHONHASHSEED"),
         "git_commit": os.environ.get("QUEST_COMMIT", "unknown")}, indent=1))
     for cid in chosen:                    # a circuit that already exceeded the limit is not retried
         if (out / f"{cid}.timeout.txt").exists() and not (out / f"{cid}.json").exists():
@@ -184,7 +200,7 @@ def main():
             k += 1
             print(f"[{k}/{len(todo)}] {cid}: {msg} ({elapsed:.0f} s, elapsed {(time.time() - t0) / 60:.1f} min)",
                   flush=True)
-    rows = [json.loads(p.read_text()) for p in sorted(out.glob("holdout3_*.json"))]
+    rows = [json.loads(p.read_text()) for p in sorted(out.glob(f"{a.split}_*.json"))]
     cnt = Counter((r["status"], r["kind"], r["reused_candidate_label"]) for r in rows)
     print("\nstatus, kind, reused candidate label -> circuits")
     for key, v in sorted(cnt.items(), key=str):

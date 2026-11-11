@@ -8,6 +8,9 @@ Decisions: notes/DECISIONS_qdislib.md. Per circuit:
 All widths are computed here; the thesis environment keeps the widest cut that fits
 after routing, which is the rule of decision A5 for find_cuts. Every call is timed;
 a call over the time limit is recorded as a timeout and the run continues.
+
+Holdout4 (11 Nov 2026): --split holdout4 --circuits runs/paper_budget/qdislib_holdout4/circuits
+--out runs/paper_budget/qdislib_holdout4/cuts. The defaults are the October holdout3 paths.
 """
 import argparse
 import json
@@ -76,11 +79,14 @@ def main():
     ap.add_argument("--limit", type=int, default=None)
     ap.add_argument("--time-limit", type=int, default=600, help="seconds per find_cut call")
     ap.add_argument("--pilot", action="store_true", help="width 13, seed 1234, SparseCut k=1")
+    ap.add_argument("--split", default="holdout3", choices=("holdout3", "holdout4"))
     args = ap.parse_args()
     src, out = Path(args.circuits), Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
     cmap = [tuple(e) for e in json.loads((src / "coupling_map.json").read_text())]
-    files = sorted(src.glob("holdout3_*.json"))[:args.limit]
+    files = sorted(src.glob(f"{args.split}_*.json"))[:args.limit]
+    if not files:
+        raise SystemExit(f"no {args.split}_*.json in {src}: export the circuits first")
     for p in files:
         meta = json.loads(p.read_text())
         qc = qiskit.qasm2.loads((src / f"{meta['cid']}.qasm").read_text(),
