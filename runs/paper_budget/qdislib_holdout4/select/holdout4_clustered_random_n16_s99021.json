@@ -1,0 +1,253 @@
+{
+ "cid": "holdout4_clustered_random_n16_s99021",
+ "default": {
+  "1234": {
+   "gate_cut_indices": [
+    57
+   ],
+   "wire_cuts": [],
+   "n_fragments": 5,
+   "home_a": [
+    2,
+    5,
+    6,
+    7,
+    8,
+    11,
+    12,
+    15
+   ],
+   "no_cut": false,
+   "log2_gamma2": 3.169925001442312,
+   "reason": "ok",
+   "kind": "multipiece",
+   "piece_widths": [
+    5,
+    4,
+    3,
+    3,
+    1
+   ],
+   "status": "ok",
+   "routed": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ],
+   "width": 13,
+   "max_cuts": null,
+   "tried": [
+    "ok"
+   ]
+  },
+  "2027": {
+   "gate_cut_indices": [
+    57
+   ],
+   "wire_cuts": [],
+   "n_fragments": 5,
+   "home_a": [
+    2,
+    5,
+    6,
+    7,
+    8,
+    11,
+    12,
+    15
+   ],
+   "no_cut": false,
+   "log2_gamma2": 3.169925001442312,
+   "reason": "ok",
+   "kind": "multipiece",
+   "piece_widths": [
+    5,
+    4,
+    3,
+    3,
+    1
+   ],
+   "status": "ok",
+   "routed": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ],
+   "width": 13,
+   "max_cuts": null,
+   "tried": [
+    "ok"
+   ]
+  },
+  "3141": {
+   "gate_cut_indices": [
+    57
+   ],
+   "wire_cuts": [],
+   "n_fragments": 5,
+   "home_a": [
+    2,
+    5,
+    6,
+    7,
+    8,
+    11,
+    12,
+    15
+   ],
+   "no_cut": false,
+   "log2_gamma2": 3.169925001442312,
+   "reason": "ok",
+   "kind": "multipiece",
+   "piece_widths": [
+    5,
+    4,
+    3,
+    3,
+    1
+   ],
+   "status": "ok",
+   "routed": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ],
+   "width": 13,
+   "max_cuts": null,
+   "tried": [
+    "ok"
+   ]
+  },
+  "4242": {
+   "gate_cut_indices": [
+    57
+   ],
+   "wire_cuts": [],
+   "n_fragments": 5,
+   "home_a": [
+    2,
+    5,
+    6,
+    7,
+    8,
+    11,
+    12,
+    15
+   ],
+   "no_cut": false,
+   "log2_gamma2": 3.169925001442312,
+   "reason": "ok",
+   "kind": "multipiece",
+   "piece_widths": [
+    5,
+    4,
+    3,
+    3,
+    1
+   ],
+   "status": "ok",
+   "routed": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ],
+   "width": 13,
+   "max_cuts": null,
+   "tried": [
+    "ok"
+   ]
+  },
+  "5555": {
+   "gate_cut_indices": [
+    57
+   ],
+   "wire_cuts": [],
+   "n_fragments": 5,
+   "home_a": [
+    2,
+    5,
+    6,
+    7,
+    8,
+    11,
+    12,
+    15
+   ],
+   "no_cut": false,
+   "log2_gamma2": 3.169925001442312,
+   "reason": "ok",
+   "kind": "multipiece",
+   "piece_widths": [
+    5,
+    4,
+    3,
+    3,
+    1
+   ],
+   "status": "ok",
+   "routed": [
+    "ok",
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ],
+   "width": 13,
+   "max_cuts": null,
+   "tried": [
+    "ok"
+   ]
+  }
+ },
+ "sparsecut": {
+  "gate_cut_indices": [
+   60
+  ],
+  "wire_cuts": [],
+  "n_fragments": 5,
+  "home_a": [
+   0,
+   4,
+   5,
+   8,
+   9,
+   12,
+   13,
+   14
+  ],
+  "no_cut": false,
+  "log2_gamma2": 3.169925001442312,
+  "reason": "ok",
+  "kind": "multipiece",
+  "piece_widths": [
+   6,
+   5,
+   3,
+   1,
+   1
+  ],
+  "status": "ok",
+  "routed": [
+   "ok",
+   "ok",
+   "ok",
+   "ok",
+   "ok"
+  ],
+  "width": null,
+  "max_cuts": 1,
+  "tried": [
+   "ok"
+  ]
+ },
+ "status": "done",
+ "wall_s": 0.3
+}

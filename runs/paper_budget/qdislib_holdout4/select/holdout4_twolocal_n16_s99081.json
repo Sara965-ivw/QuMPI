@@ -1,0 +1,193 @@
+{
+ "cid": "holdout4_twolocal_n16_s99081",
+ "default": {
+  "1234": {
+   "gate_cut_indices": [
+    23
+   ],
+   "wire_cuts": [],
+   "n_fragments": 2,
+   "home_a": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "no_cut": false,
+   "log2_gamma2": 3.169925001442312,
+   "reason": "ok",
+   "kind": "multipiece",
+   "piece_widths": [
+    8,
+    8
+   ],
+   "status": "ok",
+   "routed": [
+    "ok",
+    "ok"
+   ],
+   "width": 13,
+   "max_cuts": null,
+   "tried": [
+    "ok"
+   ]
+  },
+  "2027": {
+   "gate_cut_indices": [
+    23
+   ],
+   "wire_cuts": [],
+   "n_fragments": 2,
+   "home_a": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "no_cut": false,
+   "log2_gamma2": 3.169925001442312,
+   "reason": "ok",
+   "kind": "multipiece",
+   "piece_widths": [
+    8,
+    8
+   ],
+   "status": "ok",
+   "routed": [
+    "ok",
+    "ok"
+   ],
+   "width": 13,
+   "max_cuts": null,
+   "tried": [
+    "ok"
+   ]
+  },
+  "3141": {
+   "gate_cut_indices": [
+    23
+   ],
+   "wire_cuts": [],
+   "n_fragments": 2,
+   "home_a": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "no_cut": false,
+   "log2_gamma2": 3.169925001442312,
+   "reason": "ok",
+   "kind": "multipiece",
+   "piece_widths": [
+    8,
+    8
+   ],
+   "status": "ok",
+   "routed": [
+    "ok",
+    "ok"
+   ],
+   "width": 13,
+   "max_cuts": null,
+   "tried": [
+    "ok"
+   ]
+  },
+  "4242": {
+   "gate_cut_indices": [
+    23
+   ],
+   "wire_cuts": [],
+   "n_fragments": 2,
+   "home_a": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "no_cut": false,
+   "log2_gamma2": 3.169925001442312,
+   "reason": "ok",
+   "kind": "multipiece",
+   "piece_widths": [
+    8,
+    8
+   ],
+   "status": "ok",
+   "routed": [
+    "ok",
+    "ok"
+   ],
+   "width": 13,
+   "max_cuts": null,
+   "tried": [
+    "ok"
+   ]
+  },
+  "5555": {
+   "gate_cut_indices": [
+    23
+   ],
+   "wire_cuts": [],
+   "n_fragments": 2,
+   "home_a": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "no_cut": false,
+   "log2_gamma2": 3.169925001442312,
+   "reason": "ok",
+   "kind": "multipiece",
+   "piece_widths": [
+    8,
+    8
+   ],
+   "status": "ok",
+   "routed": [
+    "ok",
+    "ok"
+   ],
+   "width": 13,
+   "max_cuts": null,
+   "tried": [
+    "ok"
+   ]
+  }
+ },
+ "sparsecut": {
+  "status": "infeasible",
+  "tried": [
+   "too_wide",
+   "too_wide",
+   "too_wide",
+   "too_wide",
+   "too_wide",
+   "too_wide"
+  ]
+ },
+ "status": "done",
+ "wall_s": 0.2
+}

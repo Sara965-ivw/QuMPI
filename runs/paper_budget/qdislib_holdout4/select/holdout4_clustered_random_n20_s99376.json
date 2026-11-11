@@ -1,0 +1,275 @@
+{
+ "cid": "holdout4_clustered_random_n20_s99376",
+ "default": {
+  "1234": {
+   "gate_cut_indices": [
+    54,
+    55,
+    76,
+    80,
+    86
+   ],
+   "wire_cuts": [],
+   "n_fragments": 4,
+   "home_a": [
+    1,
+    2,
+    3,
+    5,
+    8,
+    16,
+    17,
+    18
+   ],
+   "no_cut": false,
+   "log2_gamma2": 15.84962500721156,
+   "reason": "ok",
+   "kind": "multipiece",
+   "piece_widths": [
+    6,
+    6,
+    4,
+    4
+   ],
+   "status": "ok",
+   "routed": [
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ],
+   "width": 9,
+   "max_cuts": null,
+   "tried": [
+    "too_wide",
+    "too_wide",
+    "too_wide",
+    "too_wide",
+    "ok"
+   ]
+  },
+  "2027": {
+   "gate_cut_indices": [
+    54,
+    55,
+    76,
+    80,
+    86
+   ],
+   "wire_cuts": [],
+   "n_fragments": 4,
+   "home_a": [
+    1,
+    2,
+    3,
+    5,
+    8,
+    16,
+    17,
+    18
+   ],
+   "no_cut": false,
+   "log2_gamma2": 15.84962500721156,
+   "reason": "ok",
+   "kind": "multipiece",
+   "piece_widths": [
+    6,
+    6,
+    4,
+    4
+   ],
+   "status": "ok",
+   "routed": [
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ],
+   "width": 9,
+   "max_cuts": null,
+   "tried": [
+    "too_wide",
+    "too_wide",
+    "too_wide",
+    "too_wide",
+    "ok"
+   ]
+  },
+  "3141": {
+   "gate_cut_indices": [
+    54,
+    55,
+    76,
+    80,
+    86
+   ],
+   "wire_cuts": [],
+   "n_fragments": 4,
+   "home_a": [
+    1,
+    2,
+    3,
+    5,
+    8,
+    16,
+    17,
+    18
+   ],
+   "no_cut": false,
+   "log2_gamma2": 15.84962500721156,
+   "reason": "ok",
+   "kind": "multipiece",
+   "piece_widths": [
+    6,
+    6,
+    4,
+    4
+   ],
+   "status": "ok",
+   "routed": [
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ],
+   "width": 9,
+   "max_cuts": null,
+   "tried": [
+    "too_wide",
+    "too_wide",
+    "too_wide",
+    "too_wide",
+    "ok"
+   ]
+  },
+  "4242": {
+   "gate_cut_indices": [
+    54,
+    55,
+    76,
+    80,
+    86
+   ],
+   "wire_cuts": [],
+   "n_fragments": 4,
+   "home_a": [
+    1,
+    2,
+    3,
+    5,
+    8,
+    16,
+    17,
+    18
+   ],
+   "no_cut": false,
+   "log2_gamma2": 15.84962500721156,
+   "reason": "ok",
+   "kind": "multipiece",
+   "piece_widths": [
+    6,
+    6,
+    4,
+    4
+   ],
+   "status": "ok",
+   "routed": [
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ],
+   "width": 9,
+   "max_cuts": null,
+   "tried": [
+    "too_wide",
+    "too_wide",
+    "too_wide",
+    "too_wide",
+    "ok"
+   ]
+  },
+  "5555": {
+   "gate_cut_indices": [
+    54,
+    55,
+    76,
+    80,
+    86
+   ],
+   "wire_cuts": [],
+   "n_fragments": 4,
+   "home_a": [
+    1,
+    2,
+    3,
+    5,
+    8,
+    16,
+    17,
+    18
+   ],
+   "no_cut": false,
+   "log2_gamma2": 15.84962500721156,
+   "reason": "ok",
+   "kind": "multipiece",
+   "piece_widths": [
+    6,
+    6,
+    4,
+    4
+   ],
+   "status": "ok",
+   "routed": [
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ],
+   "width": 9,
+   "max_cuts": null,
+   "tried": [
+    "too_wide",
+    "too_wide",
+    "too_wide",
+    "too_wide",
+    "ok"
+   ]
+  }
+ },
+ "sparsecut": {
+  "gate_cut_indices": [
+   54,
+   55,
+   77,
+   78,
+   79,
+   81
+  ],
+  "wire_cuts": [],
+  "n_fragments": 3,
+  "home_a": [],
+  "no_cut": false,
+  "log2_gamma2": 19.019550008653873,
+  "reason": "non-separating gate cuts [78, 81]",
+  "kind": "multipiece",
+  "piece_widths": [
+   8,
+   6,
+   6
+  ],
+  "status": "unrepresentable",
+  "width": null,
+  "max_cuts": 6,
+  "tried": [
+   "too_wide",
+   "too_wide",
+   "too_wide",
+   "too_wide",
+   "too_wide",
+   "unrepresentable"
+  ]
+ },
+ "status": "done",
+ "wall_s": 0.7
+}
