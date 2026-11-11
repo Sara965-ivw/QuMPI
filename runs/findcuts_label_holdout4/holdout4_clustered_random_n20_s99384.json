@@ -1,0 +1,66 @@
+{
+ "cid": "holdout4_clustered_random_n20_s99384",
+ "family": "clustered_random",
+ "n_qubits": 20,
+ "status": "unrepresentable",
+ "kind": "two_side",
+ "width_used": 12,
+ "attempts": [
+  {
+   "width": 13,
+   "kind": "multipiece",
+   "fits": false,
+   "routed": [
+    "ok",
+    "ok",
+    "13+1"
+   ],
+   "g": 1,
+   "w": 0,
+   "subcircuits": 3,
+   "gamma2": 9.0
+  },
+  {
+   "width": 12,
+   "kind": "two_side",
+   "status": "unrepresentable",
+   "reason": "wire cut with 3 subcircuits"
+  }
+ ],
+ "mapping": {
+  "n_gate_cuts": 0,
+  "n_wire_cuts": 1,
+  "n_fragments": 3,
+  "gate_cut_indices": [],
+  "wire_cuts": [
+   [
+    18,
+    72
+   ]
+  ],
+  "representable": true,
+  "reason": "ok",
+  "home_a": [
+   0,
+   2,
+   3,
+   6,
+   9,
+   11,
+   14,
+   16,
+   17,
+   18,
+   19
+  ],
+  "width_a": 11,
+  "width_b": 10,
+  "findcuts_gamma": 16.0,
+  "labeller_log2_overhead": 4.0,
+  "minimum_reached": true,
+  "no_cut_needed": false
+ },
+ "reused_candidate_label": false,
+ "label": null,
+ "wall_s": 2.5
+}

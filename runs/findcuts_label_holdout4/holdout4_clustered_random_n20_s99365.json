@@ -1,0 +1,14 @@
+{
+ "cid": "holdout4_clustered_random_n20_s99365",
+ "family": "clustered_random",
+ "n_qubits": 20,
+ "status": "timeout",
+ "kind": null,
+ "width_used": null,
+ "attempts": [],
+ "mapping": null,
+ "reused_candidate_label": false,
+ "label": null,
+ "wall_s": 1800.3,
+ "time_limit_s": 1800
+}

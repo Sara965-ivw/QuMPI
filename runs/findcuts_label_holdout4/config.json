@@ -1,0 +1,10 @@
+{
+ "decisions": "A1 (d) exploratory on holdout3; A2 (a); A3 (a) width 13, defaults, seed 1234; A4 (a) no-cut piecewise; A5 (a) with fix A: lower width only for a too-wide subcircuit; A7 (b) fix B: each subcircuit simulated on its own; fix C: time limit",
+ "split": "holdout4",
+ "selection": "data/corpus_v2/holdout4_analysis_set.json",
+ "n_circuits": 156,
+ "time_limit_s": 1800,
+ "workers": 4,
+ "pythonhashseed": "0",
+ "git_commit": "b5778abf84ce49cae68597f9f44302bdb8323187"
+}

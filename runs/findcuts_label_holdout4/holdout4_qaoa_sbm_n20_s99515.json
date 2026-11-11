@@ -1,0 +1,14 @@
+{
+ "cid": "holdout4_qaoa_sbm_n20_s99515",
+ "family": "qaoa_sbm",
+ "n_qubits": 20,
+ "status": "timeout",
+ "kind": null,
+ "width_used": null,
+ "attempts": [],
+ "mapping": null,
+ "reused_candidate_label": false,
+ "label": null,
+ "wall_s": 1800.8,
+ "time_limit_s": 1800
+}

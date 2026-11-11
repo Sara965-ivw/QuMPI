@@ -1,0 +1,152 @@
+{
+ "cid": "holdout4_clustered_random_n16_s99017",
+ "family": "clustered_random",
+ "n_qubits": 16,
+ "status": "ok",
+ "kind": "nocut",
+ "width_used": 13,
+ "attempts": [
+  {
+   "width": 13,
+   "kind": "nocut",
+   "fits": true,
+   "routed": [
+    5,
+    2,
+    7,
+    3
+   ],
+   "g": 0,
+   "w": 0,
+   "subcircuits": 4,
+   "gamma2": 1.0
+  }
+ ],
+ "mapping": {
+  "n_gate_cuts": 0,
+  "n_wire_cuts": 0,
+  "n_fragments": 4,
+  "gate_cut_indices": [],
+  "wire_cuts": [],
+  "representable": false,
+  "reason": "no cut needed: the circuit already separates into 4 pieces of at most 13 qubits",
+  "home_a": [],
+  "width_a": 0,
+  "width_b": 0,
+  "findcuts_gamma": 1.0,
+  "labeller_log2_overhead": NaN,
+  "minimum_reached": true,
+  "no_cut_needed": true
+ },
+ "reused_candidate_label": false,
+ "label": {
+  "cut_type": "none",
+  "g": 0,
+  "w": 0,
+  "k": 0,
+  "home_a": [],
+  "wire_cuts": [],
+  "gate_cut_indices": [],
+  "pieces": [
+   [
+    0,
+    5,
+    12,
+    13,
+    15
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    2,
+    4,
+    6,
+    7,
+    9,
+    10
+   ],
+   [
+    3,
+    11,
+    14
+   ]
+  ],
+  "piece_widths": [
+   5,
+   2,
+   6,
+   3
+  ],
+  "width_a": 6,
+  "width_b": 0,
+  "log2_sampling_overhead": 0.0,
+  "gamma2": 1.0,
+  "pst_hellinger": 0.931165515609043,
+  "tv_distance": 0.1363783288815259,
+  "obs_mu": [
+   0.9177420722626324,
+   0.8984489441657278,
+   -0.0019450961846863568,
+   -0.9843799902566841,
+   -0.0001859767854681671,
+   0.01037446200923725,
+   -0.001609794916503482,
+   -0.9268649669336042,
+   -0.9372189478713578,
+   0.005931846402629171,
+   -0.00023252373811732951,
+   0.9085814026479505,
+   0.3436131334872893,
+   -0.05162256455139769,
+   0.7566121503088471,
+   -0.3769522665345447,
+   -0.34615672713774553,
+   -0.9061854025611605,
+   7.943313515146322e-05,
+   -0.0022768917211571094,
+   -0.8943893554312946,
+   0.24247447430693309,
+   0.004963469328355452,
+   -0.15205773203176534,
+   -0.8653930422126027,
+   -0.005454783552805265,
+   0.3920512595489798,
+   0.7718363886959735,
+   -0.004213123642962335,
+   8.385575633351419e-06
+  ],
+  "oracle_tvd": 3.1057339905403746e-16,
+  "piece_phys": [
+   [
+    123,
+    126,
+    125,
+    112,
+    124
+   ],
+   [
+    12,
+    17
+   ],
+   [
+    126,
+    112,
+    125,
+    111,
+    123,
+    124
+   ],
+   [
+    103,
+    126,
+    112
+   ]
+  ],
+  "routing_overhead_2q": 3,
+  "label_scheme": "v3.1+nocut",
+  "label_wall_s": 13.857102317000226
+ },
+ "wall_s": 16.9
+}
