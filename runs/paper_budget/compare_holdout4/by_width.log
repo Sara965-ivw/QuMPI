@@ -1,0 +1,44 @@
+holdout4 by width (151 circuits; source per_circuit.json)
+
+Regret against the best candidate at 1e9 shots
+ width    n         M2b          M1          M0  min_kappa2
+    16   50       1.073       1.149       1.120       1.154
+    18   55       1.115       1.179       1.191       1.209
+    20   46       1.187       1.236       1.193       1.239
+
+Error against the best available cut (candidates and tools' cuts), at 1e3 / 1e6 / 1e9 shots
+-- 16 qubits (n = 50, connected 45)
+   M2b             1.945    1.142    1.090
+   M1              1.946    1.183    1.168
+   M0              1.946    1.167    1.138
+   min_kappa2      1.946    1.158    1.173
+   metis           2.487    1.198    1.183
+   random         11.791    1.742    1.320
+   find_cuts       1.011    1.284    1.441
+   qdislib         1.197    1.055    1.142
+-- 18 qubits (n = 55, connected 45)
+   M2b             1.988    1.192    1.125
+   M1              1.993    1.255    1.190
+   M0              1.987    1.224    1.202
+   min_kappa2      1.987    1.196    1.220
+   metis           2.572    1.357    1.381
+   random          9.777    1.812    1.411
+   find_cuts       1.009    1.249    1.416
+   qdislib         1.390    1.045    1.152
+-- 20 qubits (n = 46, connected 42)
+   M2b             1.553    1.243    1.209
+   M1              1.561    1.286    1.258
+   M0              1.558    1.253    1.215
+   min_kappa2      1.558    1.248    1.261
+   metis           1.880    1.298    1.261
+   random         10.241    1.741    1.346
+   find_cuts       1.005    1.135    1.228
+   qdislib         1.243    1.095    1.172
+
+Ratios at 1e9 shots, geometric mean (95% bootstrap CI)
+ width                    M2b/M1                    M2b/M0             find_cuts/M2b               qdislib/M2b
+    16      0.934 [0.894, 0.969]      0.958 [0.926, 0.989]      1.321 [1.210, 1.446]      1.047 [0.997, 1.104]
+    18      0.945 [0.908, 0.980]      0.936 [0.895, 0.975]      1.259 [1.169, 1.362]      1.024 [0.967, 1.092]
+    20      0.961 [0.886, 1.036]      0.995 [0.927, 1.068]      1.016 [0.927, 1.119]      0.969 [0.893, 1.051]
+
+written /home/alshehrisara/QuMPI/runs/paper_budget/compare_holdout4/by_width.json
