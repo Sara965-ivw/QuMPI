@@ -1,0 +1,41 @@
+Wed Nov 11 12:08:36 +03 2026
+1fd4b45cc46b40bc08acc28e2297a343672d9035
+?? data/corpus_v2/holdout4/
+Command 'python' not found, did you mean:
+  command 'python3' from deb python3
+  command 'python' from deb python-is-python3
+--- retry with venv
+Wed Nov 11 12:11:26 +03 2026
+/home/alshehrisara/quest-mpi/quest-mpi-env/bin/python
+PYTHONHASHSEED=0
+holdout4: 156 circuits; checkpoints verified (15 SHA-256)
+
+fit (seed-averaged, clipped):
+  M0   R2_within -0.1525  tau_b 0.2099  rmse 0.1311  clipped 0
+  M1   R2_within +0.0470  tau_b 0.1945  rmse 0.1306  clipped 0
+  M2   R2_within -0.0921  tau_b 0.2119  rmse 0.1310  clipped 0
+  M2b  R2_within +0.0572  tau_b 0.3008  rmse 0.1306  clipped 0
+  M3   R2_within -0.0111  tau_b 0.1457  rmse 0.1856  clipped 0
+
+geometric-mean regret (true m)
+  budget          M0          M1          M2         M2b          M3  min_kappa2
+   1e+03      1.0024      1.0042      1.0013      1.0016      1.0029      1.0024
+   1e+04      1.0160      1.0230      1.0084      1.0091      1.0147      1.0131
+   1e+05      1.0377      1.0658      1.0331      1.0338      1.0399      1.0349
+   1e+06      1.0911      1.1164      1.0810      1.0729      1.0910      1.0765
+   1e+07      1.1299      1.1718      1.1273      1.1064      1.1814      1.1479
+   1e+08      1.1599      1.1806      1.1557      1.1227      1.2328      1.1942
+   1e+09      1.1633      1.1834      1.1586      1.1216      1.2381      1.2018
+
+Family A (primary): M2b vs M1  (ratio = gm regret model / reference; < 1 = model better)
+  M2b vs M1 at 1e+08: ratio 0.9509 CI [0.9238, 0.9782]  p 3.82e-04  Holm 5.43e-04  different choices 81/156
+  M2b vs M1 at 1e+09: ratio 0.9478 CI [0.9200, 0.9757]  p 2.71e-04  Holm 5.43e-04  different choices 83/156
+
+Family B (replication)  (ratio = gm regret model / reference; < 1 = model better)
+  M2 vs M1 at 1e+08: ratio 0.9789 CI [0.9485, 1.0091]  p 2.56e-01  Holm 5.12e-01  different choices 98/156
+  M2 vs M1 at 1e+09: ratio 0.9790 CI [0.9484, 1.0095]  p 2.73e-01  Holm 5.12e-01  different choices 100/156
+  M2 vs M3 at 1e+08: ratio 0.9375 CI [0.8991, 0.9759]  p 9.45e-03  Holm 2.87e-02  different choices 120/156
+  M2 vs M3 at 1e+09: ratio 0.9358 CI [0.8968, 0.9747]  p 7.16e-03  Holm 2.87e-02  different choices 122/156
+
+H5 True  H6 True  |  H1 False  H2 False  H3 True  H4 True
+written /home/alshehrisara/QuMPI/runs/paper_budget/gt_att/eval4_holdout4.json

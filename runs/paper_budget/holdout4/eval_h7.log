@@ -1,0 +1,17 @@
+Wed Nov 11 12:08:36 +03 2026
+1fd4b45cc46b40bc08acc28e2297a343672d9035
+?? data/corpus_v2/holdout4/
+Command 'python' not found, did you mean:
+  command 'python3' from deb python3
+  command 'python' from deb python-is-python3
+--- retry with venv
+Wed Nov 11 12:11:26 +03 2026
+/home/alshehrisara/quest-mpi/quest-mpi-env/bin/python
+PYTHONHASHSEED=0
+holdout4: 156 circuits; one overhead 33 (21.2%), several 123; checkpoints verified
+  one      1e+08: M2b/M1 0.9327 CI [0.8610, 1.0073]  p 7.95e-02  different choices 28/33
+  one      1e+09: M2b/M1 0.9313 CI [0.8584, 1.0075]  p 7.95e-02  different choices 28/33
+  several  1e+08: M2b/M1 0.9559 CI [0.9270, 0.9845]  p 2.22e-03  different choices 53/123
+  several  1e+09: M2b/M1 0.9522 CI [0.9225, 0.9818]  p 1.58e-03  different choices 55/123
+H7 False  H8 False
+written /home/alshehrisara/QuMPI/runs/paper_budget/gt_att/eval4_h7_holdout4.json
