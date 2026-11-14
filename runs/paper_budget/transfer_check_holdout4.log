@@ -1,0 +1,7 @@
+reproduction of eval4_holdout4.json, M0        : max |difference| 0.00e+00
+reproduction of eval4_holdout4.json, M1        : max |difference| 0.00e+00
+reproduction of eval4_holdout4.json, M2        : max |difference| 0.00e+00
+reproduction of eval4_holdout4.json, M2b       : max |difference| 0.00e+00
+reproduction of eval4_holdout4.json, M3        : max |difference| 0.00e+00
+reproduction of eval4_holdout4.json, min_kappa2: max |difference| 0.00e+00
+REPRODUCTION OK: this code gives the confirmatory holdout4 results exactly
