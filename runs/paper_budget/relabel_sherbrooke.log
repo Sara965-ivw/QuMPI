@@ -1,0 +1,158 @@
+[  1/156] done    holdout4_twolocal_n20_s99421               6 kept  0 dropped  6027.6s  elapsed  100.6 min
+[  2/156] done    holdout4_twolocal_n20_s99423               6 kept  0 dropped  6298.8s  elapsed  105.1 min
+[  3/156] done    holdout4_twolocal_n20_s99424               6 kept  0 dropped  5705.8s  elapsed  199.2 min
+[  4/156] done    holdout4_qaoa_sbm_n20_s99515              12 kept  0 dropped 12658.9s  elapsed  209.8 min
+[  5/156] done    holdout4_twolocal_n20_s99436              12 kept  0 dropped  6824.7s  elapsed  213.0 min
+[  6/156] done    holdout4_qaoa_sbm_n20_s99489              12 kept  0 dropped 17740.8s  elapsed  292.9 min
+[  7/156] done    holdout4_qaoa_sbm_n20_s99487              12 kept  0 dropped 20005.3s  elapsed  330.2 min
+[  8/156] done    holdout4_qaoa_sbm_n20_s99483              10 kept  2 dropped 20131.4s  elapsed  332.3 min
+[  9/156] done    holdout4_twolocal_n18_s99249              12 kept  0 dropped  8532.5s  elapsed  339.2 min
+[ 10/156] done    holdout4_twolocal_n20_s99429              12 kept  0 dropped  7992.2s  elapsed  341.0 min
+[ 11/156] done    holdout4_twolocal_n18_s99248              12 kept  0 dropped  8034.5s  elapsed  345.0 min
+[ 12/156] done    holdout4_twolocal_n18_s99246              12 kept  0 dropped  6541.3s  elapsed  401.5 min
+[ 13/156] done    holdout4_clustered_random_n20_s99369      12 kept  0 dropped  5068.7s  elapsed  416.8 min
+[ 14/156] done    holdout4_twolocal_n18_s99254              12 kept  0 dropped  6175.9s  elapsed  433.1 min
+[ 15/156] done    holdout4_twolocal_n20_s99444              12 kept  0 dropped  5379.1s  elapsed  434.7 min
+[ 16/156] done    holdout4_twolocal_n18_s99247              12 kept  0 dropped  6149.1s  elapsed  443.5 min
+[ 17/156] done    holdout4_twolocal_n18_s99243              12 kept  0 dropped  6264.6s  elapsed  443.7 min
+[ 18/156] done    holdout4_clustered_random_n20_s99366      12 kept  0 dropped  3961.6s  elapsed  467.6 min
+[ 19/156] done    holdout4_twolocal_n20_s99434               6 kept  0 dropped  4106.2s  elapsed  503.2 min
+[ 20/156] done    holdout4_twolocal_n20_s99431               6 kept  0 dropped  3927.8s  elapsed  509.3 min
+[ 21/156] done    holdout4_twolocal_n20_s99433               6 kept  0 dropped  4054.9s  elapsed  511.2 min
+[ 22/156] done    holdout4_twolocal_n18_s99256              12 kept  0 dropped  6504.0s  elapsed  525.3 min
+[ 23/156] done    holdout4_twolocal_n20_s99443              12 kept  0 dropped  5731.6s  elapsed  528.8 min
+[ 24/156] done    holdout4_twolocal_n18_s99251              12 kept  0 dropped  6177.5s  elapsed  570.6 min
+[ 25/156] done    holdout4_twolocal_n18_s99244              12 kept  0 dropped  6390.0s  elapsed  609.7 min
+[ 26/156] done    holdout4_twolocal_n18_s99258              12 kept  0 dropped  6235.0s  elapsed  615.2 min
+[ 27/156] done    holdout4_twolocal_n18_s99255              12 kept  0 dropped  6640.4s  elapsed  620.0 min
+[ 28/156] done    holdout4_twolocal_n18_s99259              12 kept  0 dropped  6718.6s  elapsed  637.3 min
+[ 29/156] done    holdout4_qaoa_sbm_n20_s99514              12 kept  0 dropped  7090.2s  elapsed  647.0 min
+[ 30/156] done    holdout4_clustered_random_n20_s99376      11 kept  0 dropped  6578.3s  elapsed  680.3 min
+[ 31/156] done    holdout4_twolocal_n20_s99437               6 kept  0 dropped  4765.0s  elapsed  694.7 min
+[ 32/156] done    holdout4_twolocal_n20_s99430              12 kept  0 dropped  6429.1s  elapsed  716.9 min
+[ 33/156] done    holdout4_twolocal_n20_s99438               6 kept  0 dropped  4381.8s  elapsed  720.1 min
+[ 34/156] done    holdout4_twolocal_n18_s99252              12 kept  0 dropped  3754.1s  elapsed  757.3 min
+[ 35/156] done    holdout4_qaoa_sbm_n20_s99510              12 kept  0 dropped  7817.7s  elapsed  767.7 min
+[ 36/156] done    holdout4_twolocal_n20_s99441              12 kept  0 dropped  6095.7s  elapsed  781.9 min
+[ 37/156] done    holdout4_qaoa_sbm_n18_s99308              12 kept  0 dropped 10175.8s  elapsed  789.6 min
+[ 38/156] done    holdout4_clustered_random_n20_s99362      11 kept  0 dropped  6630.2s  elapsed  827.5 min
+[ 39/156] done    holdout4_twolocal_n20_s99428              12 kept  0 dropped  5564.9s  elapsed  850.1 min
+[ 40/156] done    holdout4_qaoa_sbm_n18_s99310              12 kept  0 dropped  8794.6s  elapsed  866.8 min
+[ 41/156] done    holdout4_clustered_random_n20_s99374      11 kept  1 dropped  6906.4s  elapsed  882.8 min
+[ 42/156] done    holdout4_clustered_random_n20_s99371       8 kept  0 dropped  5816.6s  elapsed  886.6 min
+[ 43/156] done    holdout4_clustered_random_n20_s99365       5 kept  0 dropped  2339.6s  elapsed  905.8 min
+[ 44/156] done    holdout4_twolocal_n16_s99067              12 kept  0 dropped  5812.5s  elapsed  924.4 min
+[ 45/156] done    holdout4_twolocal_n18_s99261              12 kept  0 dropped  2889.4s  elapsed  934.8 min
+[ 46/156] done    holdout4_qaoa_sbm_n20_s99518              12 kept  0 dropped  9200.4s  elapsed  935.3 min
+[ 47/156] done    holdout4_twolocal_n18_s99257              12 kept  0 dropped  3231.5s  elapsed  936.7 min
+[ 48/156] done    holdout4_twolocal_n16_s99063              12 kept  0 dropped  5620.4s  elapsed  943.8 min
+[ 49/156] done    holdout4_twolocal_n18_s99266              12 kept  0 dropped  3115.8s  elapsed  957.8 min
+[ 50/156] done    holdout4_clustered_random_n18_s99188      12 kept  0 dropped  2804.5s  elapsed  983.4 min
+[ 51/156] done    holdout4_clustered_random_n20_s99384      12 kept  0 dropped  4630.7s  elapsed 1001.6 min
+[ 52/156] done    holdout4_clustered_random_n20_s99367      10 kept  0 dropped  4373.4s  elapsed 1008.2 min
+[ 53/156] done    holdout4_twolocal_n20_s99432              12 kept  0 dropped  4986.0s  elapsed 1018.0 min
+[ 54/156] done    holdout4_clustered_random_n18_s99182      12 kept  0 dropped  4679.2s  elapsed 1021.8 min
+[ 55/156] done    holdout4_twolocal_n16_s99072              12 kept  0 dropped  5000.3s  elapsed 1041.2 min
+[ 56/156] done    holdout4_clustered_random_n20_s99385      12 kept  0 dropped  4989.4s  elapsed 1066.7 min
+[ 57/156] done    holdout4_clustered_random_n16_s99002      12 kept  0 dropped  4469.4s  elapsed 1092.5 min
+[ 58/156] done    holdout4_clustered_random_n18_s99194      12 kept  0 dropped  5992.8s  elapsed 1108.2 min
+[ 59/156] done    holdout4_qaoa_sbm_n16_s99132              12 kept  0 dropped  7117.0s  elapsed 1120.3 min
+[ 60/156] done    holdout4_qaoa_sbm_n16_s99122              12 kept  0 dropped  6757.0s  elapsed 1134.4 min
+[ 61/156] done    holdout4_qaoa_sbm_n18_s99326              12 kept  0 dropped  5756.8s  elapsed 1137.1 min
+[ 62/156] done    holdout4_clustered_random_n20_s99372      12 kept  0 dropped  4910.1s  elapsed 1148.6 min
+[ 63/156] done    holdout4_twolocal_n18_s99264              12 kept  0 dropped  3886.3s  elapsed 1185.1 min
+[ 64/156] done    holdout4_twolocal_n16_s99073              12 kept  0 dropped  5710.8s  elapsed 1187.7 min
+[ 65/156] done    holdout4_clustered_random_n20_s99386       8 kept  0 dropped  5006.1s  elapsed 1191.6 min
+[ 66/156] done    holdout4_twolocal_n18_s99267              12 kept  0 dropped  3589.4s  elapsed 1194.3 min
+[ 67/156] done    holdout4_clustered_random_n20_s99364      12 kept  0 dropped  3210.3s  elapsed 1202.2 min
+[ 68/156] done    holdout4_qaoa_sbm_n16_s99137              12 kept  0 dropped  6151.9s  elapsed 1239.7 min
+[ 69/156] done    holdout4_twolocal_n18_s99263              12 kept  0 dropped  3112.5s  elapsed 1254.1 min
+[ 70/156] done    holdout4_clustered_random_n18_s99183      12 kept  0 dropped  4070.5s  elapsed 1262.2 min
+[ 71/156] done    holdout4_qaoa_sbm_n18_s99314              12 kept  0 dropped  4478.8s  elapsed 1262.4 min
+[ 72/156] done    holdout4_qaoa_sbm_n18_s99317              12 kept  0 dropped  4806.3s  elapsed 1265.2 min
+[ 73/156] done    holdout4_twolocal_n16_s99077              12 kept  0 dropped  5049.9s  elapsed 1275.9 min
+[ 74/156] done    holdout4_clustered_random_n20_s99363       4 kept  0 dropped  2719.4s  elapsed 1299.5 min
+[ 75/156] done    holdout4_clustered_random_n18_s99189      12 kept  0 dropped  4298.0s  elapsed 1311.4 min
+[ 76/156] done    holdout4_clustered_random_n16_s99013      12 kept  0 dropped  3077.7s  elapsed 1313.7 min
+[ 77/156] done    holdout4_clustered_random_n18_s99184      12 kept  0 dropped  3643.6s  elapsed 1326.0 min
+[ 78/156] done    holdout4_clustered_random_n18_s99187      10 kept  0 dropped  3687.6s  elapsed 1337.3 min
+[ 79/156] done    holdout4_twolocal_n16_s99080              12 kept  0 dropped  4624.6s  elapsed 1339.3 min
+[ 80/156] done    holdout4_qaoa_sbm_n20_s99504              12 kept  0 dropped  3629.8s  elapsed 1360.0 min
+[ 81/156] done    holdout4_clustered_random_n18_s99203      12 kept  0 dropped  2146.9s  elapsed 1361.8 min
+[ 82/156] done    holdout4_clustered_random_n16_s99022      12 kept  0 dropped  3847.7s  elapsed 1375.6 min
+[ 83/156] done    holdout4_qaoa_sbm_n16_s99134              12 kept  0 dropped  4240.6s  elapsed 1384.4 min
+[ 84/156] done    holdout4_clustered_random_n20_s99387      12 kept  0 dropped  3209.9s  elapsed 1392.8 min
+[ 85/156] done    holdout4_clustered_random_n18_s99193      12 kept  0 dropped  3964.2s  elapsed 1403.4 min
+[ 86/156] done    holdout4_twolocal_n16_s99075              12 kept  0 dropped  2554.4s  elapsed 1404.4 min
+[ 87/156] done    holdout4_qaoa_sbm_n18_s99330              12 kept  0 dropped  2433.5s  elapsed 1416.2 min
+[ 88/156] done    holdout4_twolocal_n16_s99078              12 kept  0 dropped  2022.5s  elapsed 1418.1 min
+[ 89/156] done    holdout4_qaoa_sbm_n16_s99143              12 kept  0 dropped  3970.0s  elapsed 1426.2 min
+[ 90/156] done    holdout4_clustered_random_n18_s99186       8 kept  0 dropped  2757.1s  elapsed 1438.8 min
+[ 91/156] done    holdout4_twolocal_n16_s99065              12 kept  0 dropped  2219.2s  elapsed 1440.4 min
+[ 92/156] done    holdout4_twolocal_n16_s99071              12 kept  0 dropped  2541.9s  elapsed 1446.8 min
+[ 93/156] done    holdout4_clustered_random_n16_s99003      12 kept  0 dropped  2651.0s  elapsed 1460.4 min
+[ 94/156] done    holdout4_clustered_random_n18_s99198      12 kept  0 dropped  2798.7s  elapsed 1464.8 min
+[ 95/156] done    holdout4_clustered_random_n18_s99191      12 kept  0 dropped  2790.1s  elapsed 1472.7 min
+[ 96/156] done    holdout4_clustered_random_n16_s99006      12 kept  0 dropped  2421.7s  elapsed 1480.8 min
+[ 97/156] done    holdout4_qaoa_sbm_n18_s99322               4 kept  0 dropped  1406.5s  elapsed 1483.8 min
+[ 98/156] done    holdout4_clustered_random_n16_s99014      12 kept  0 dropped  2761.1s  elapsed 1484.8 min
+[ 99/156] done    holdout4_qaoa_sbm_n16_s99126              12 kept  0 dropped  3116.2s  elapsed 1498.7 min
+[100/156] done    holdout4_clustered_random_n16_s99015      12 kept  0 dropped  2356.6s  elapsed 1512.0 min
+[101/156] done    holdout4_clustered_random_n16_s99020      12 kept  0 dropped  2857.6s  elapsed 1512.5 min
+[102/156] done    holdout4_twolocal_n16_s99062              12 kept  0 dropped  1862.8s  elapsed 1515.9 min
+[103/156] done    holdout4_clustered_random_n18_s99197      12 kept  0 dropped  2311.6s  elapsed 1519.4 min
+[104/156] done    holdout4_clustered_random_n16_s99019      12 kept  0 dropped  2598.7s  elapsed 1527.2 min
+[105/156] done    holdout4_clustered_random_n16_s99016      12 kept  0 dropped  2344.1s  elapsed 1537.8 min
+[106/156] done    holdout4_qaoa_sbm_n16_s99148              10 kept  0 dropped  2030.6s  elapsed 1546.3 min
+[107/156] done    holdout4_twolocal_n16_s99079              12 kept  0 dropped  2190.0s  elapsed 1548.5 min
+[108/156] done    holdout4_clustered_random_n16_s99001      12 kept  0 dropped  2448.7s  elapsed 1556.7 min
+[109/156] done    holdout4_clustered_random_n18_s99200       7 kept  0 dropped  2509.7s  elapsed 1561.2 min
+[110/156] done    holdout4_clustered_random_n16_s99010       8 kept  0 dropped  2297.7s  elapsed 1565.5 min
+[111/156] done    holdout4_qaoa_sbm_n20_s99497               3 kept  0 dropped  1895.2s  elapsed 1577.9 min
+[112/156] done    holdout4_clustered_random_n18_s99195      12 kept  0 dropped  2560.0s  elapsed 1580.5 min
+[113/156] done    holdout4_clustered_random_n18_s99185       4 kept  0 dropped  1955.8s  elapsed 1581.2 min
+[114/156] done    holdout4_twolocal_n20_s99422              12 kept  0 dropped   409.5s  elapsed 1587.4 min
+[115/156] done    holdout4_clustered_random_n18_s99201      12 kept  0 dropped  2089.6s  elapsed 1596.1 min
+[116/156] done    holdout4_clustered_random_n20_s99370      12 kept  0 dropped  1434.5s  elapsed 1601.9 min
+[117/156] done    holdout4_qaoa_sbm_n16_s99128              12 kept  0 dropped  2778.2s  elapsed 1603.0 min
+[118/156] done    holdout4_clustered_random_n16_s99018      12 kept  0 dropped  2517.5s  elapsed 1607.5 min
+[119/156] done    holdout4_clustered_random_n16_s99011       4 kept  0 dropped  1237.2s  elapsed 1608.0 min
+[120/156] done    holdout4_qaoa_sbm_n16_s99121               6 kept  0 dropped  1788.9s  elapsed 1611.0 min
+[121/156] done    holdout4_clustered_random_n20_s99382      12 kept  0 dropped   605.9s  elapsed 1612.0 min
+[122/156] done    holdout4_clustered_random_n16_s99008       4 kept  0 dropped  1355.0s  elapsed 1618.7 min
+[123/156] done    holdout4_clustered_random_n18_s99202      12 kept  0 dropped   984.7s  elapsed 1619.5 min
+[124/156] done    holdout4_twolocal_n20_s99439              12 kept  0 dropped   848.4s  elapsed 1621.6 min
+[125/156] done    holdout4_twolocal_n20_s99435              12 kept  0 dropped   817.4s  elapsed 1621.7 min
+[126/156] done    holdout4_twolocal_n20_s99425              12 kept  0 dropped   580.5s  elapsed 1621.8 min
+[127/156] done    holdout4_clustered_random_n20_s99361      12 kept  0 dropped   220.5s  elapsed 1625.4 min
+[128/156] done    holdout4_twolocal_n20_s99426              12 kept  0 dropped   429.9s  elapsed 1625.9 min
+[129/156] done    holdout4_twolocal_n20_s99440              12 kept  0 dropped   423.9s  elapsed 1626.6 min
+[130/156] done    holdout4_twolocal_n20_s99427              12 kept  0 dropped   412.1s  elapsed 1628.5 min
+[131/156] done    holdout4_twolocal_n18_s99268              12 kept  0 dropped   273.2s  elapsed 1630.5 min
+[132/156] done    holdout4_twolocal_n20_s99442              12 kept  0 dropped   426.9s  elapsed 1632.5 min
+[133/156] done    holdout4_clustered_random_n16_s99017      12 kept  0 dropped   672.3s  elapsed 1633.0 min
+[134/156] done    holdout4_twolocal_n18_s99245              12 kept  0 dropped   281.7s  elapsed 1637.7 min
+[135/156] done    holdout4_qaoa_sbm_n18_s99304              12 kept  0 dropped   443.5s  elapsed 1637.9 min
+[136/156] done    holdout4_clustered_random_n16_s99021      12 kept  0 dropped   677.1s  elapsed 1637.9 min
+[137/156] done    holdout4_twolocal_n18_s99262              12 kept  0 dropped   251.9s  elapsed 1642.1 min
+[138/156] done    holdout4_twolocal_n18_s99250              12 kept  0 dropped   265.3s  elapsed 1642.2 min
+[139/156] done    holdout4_twolocal_n18_s99253              12 kept  0 dropped   265.8s  elapsed 1642.4 min
+[140/156] done    holdout4_twolocal_n18_s99260              12 kept  0 dropped   271.6s  elapsed 1646.7 min
+[141/156] done    holdout4_twolocal_n18_s99265              12 kept  0 dropped   274.7s  elapsed 1646.7 min
+[142/156] done    holdout4_twolocal_n18_s99242              12 kept  0 dropped   273.7s  elapsed 1647.0 min
+[143/156] done    holdout4_qaoa_sbm_n18_s99336               3 kept  0 dropped   894.0s  elapsed 1647.5 min
+[144/156] done    holdout4_twolocal_n16_s99064              12 kept  0 dropped   239.5s  elapsed 1650.7 min
+[145/156] done    holdout4_twolocal_n16_s99081              12 kept  0 dropped   238.1s  elapsed 1650.8 min
+[146/156] done    holdout4_twolocal_n18_s99241              12 kept  0 dropped   259.1s  elapsed 1651.3 min
+[147/156] done    holdout4_twolocal_n16_s99082              12 kept  0 dropped   231.6s  elapsed 1651.4 min
+[148/156] done    holdout4_twolocal_n16_s99076              12 kept  0 dropped   226.9s  elapsed 1654.5 min
+[149/156] done    holdout4_twolocal_n16_s99066              12 kept  0 dropped   231.7s  elapsed 1654.6 min
+[150/156] done    holdout4_twolocal_n16_s99068              12 kept  0 dropped   230.6s  elapsed 1655.2 min
+[151/156] done    holdout4_twolocal_n16_s99074              12 kept  0 dropped   231.3s  elapsed 1655.2 min
+[152/156] done    holdout4_twolocal_n16_s99069              12 kept  0 dropped   207.2s  elapsed 1658.0 min
+[153/156] done    holdout4_twolocal_n16_s99061              12 kept  0 dropped   202.1s  elapsed 1658.0 min
+[154/156] done    holdout4_twolocal_n16_s99070              12 kept  0 dropped   196.8s  elapsed 1658.5 min
+[155/156] done    holdout4_qaoa_sbm_n16_s99156              12 kept  0 dropped  1957.5s  elapsed 1661.2 min
+[156/156] done    holdout4_qaoa_sbm_n16_s99152              12 kept  0 dropped  3465.4s  elapsed 1668.8 min
+holdout4_sherbrooke: 156/156 circuits, 3 candidates dropped in this run (mapped width), 27.81 h. Labels NOT summarised: blinded until the pre-registered evaluation.
+RELABEL FINISHED
