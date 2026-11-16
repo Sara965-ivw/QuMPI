@@ -1,0 +1,44 @@
+holdout4_sherbrooke: 156 circuits; 15 checkpoints verified; features from fake_sherbrooke
+calibration control: features from fake_brisbane on the same 156 circuits
+
+fit (seed-averaged, clipped)
+  M0   R2_within +0.2121  tau_b 0.1078  rmse 0.1518
+  M1   R2_within +0.2103  tau_b 0.1491  rmse 0.1548
+  M2   R2_within +0.2160  tau_b 0.1285  rmse 0.1517
+  M2b  R2_within +0.2246  tau_b 0.1708  rmse 0.1545
+  M3   R2_within +0.0031  tau_b 0.0724  rmse 0.1827
+
+geometric-mean regret on fake_sherbrooke (true m)   [holdout4 on fake_brisbane in brackets]
+  budget                M0                M1                M2               M2b                M3        min_kappa2
+   1e+03   1.0052 [1.0024]   1.0028 [1.0042]   1.0048 [1.0013]   1.0029 [1.0016]   1.0044 [1.0029]   1.0052 [1.0024]
+   1e+04   1.0288 [1.0160]   1.0177 [1.0230]   1.0258 [1.0084]   1.0179 [1.0091]   1.0240 [1.0147]   1.0264 [1.0131]
+   1e+05   1.0935 [1.0377]   1.0644 [1.0658]   1.0754 [1.0331]   1.0579 [1.0338]   1.0694 [1.0399]   1.0759 [1.0349]
+   1e+06   1.1812 [1.0911]   1.1488 [1.1164]   1.1530 [1.0810]   1.1400 [1.0729]   1.1570 [1.0910]   1.1588 [1.0765]
+   1e+07   1.2745 [1.1299]   1.2462 [1.1718]   1.2251 [1.1273]   1.2246 [1.1064]   1.2582 [1.1814]   1.2597 [1.1479]
+   1e+08   1.2961 [1.1599]   1.2831 [1.1806]   1.2514 [1.1557]   1.2405 [1.1227]   1.3217 [1.2328]   1.3179 [1.1942]
+   1e+09   1.2977 [1.1633]   1.2863 [1.1834]   1.2502 [1.1586]   1.2445 [1.1216]   1.3296 [1.2381]   1.3261 [1.2018]
+
+Family T (primary)  (ratio = gm regret model / reference; < 1 = model better)
+  M2b vs M1 at 1e+08: ratio 0.9668 CI [0.9322, 1.0003]  p 8.93e-02  Holm 1.79e-01  different choices 82/156
+  M2b vs M1 at 1e+09: ratio 0.9676 CI [0.9318, 1.0019]  p 1.15e-01  Holm 1.79e-01  different choices 83/156
+
+Family S (secondary)  (ratio = gm regret model / reference; < 1 = model better)
+  M2b vs M0 at 1e+08: ratio 0.9571 CI [0.9157, 1.0012]  p 6.55e-03  Holm 2.62e-02  different choices 111/156
+  M2b vs M0 at 1e+09: ratio 0.9590 CI [0.9163, 1.0045]  p 1.15e-02  Holm 3.46e-02  different choices 112/156
+  M0 vs min_kappa2 at 1e+08: ratio 0.9835 CI [0.9407, 1.0264]  p 4.80e-01  Holm 7.43e-01  different choices 60/156
+  M0 vs min_kappa2 at 1e+09: ratio 0.9785 CI [0.9354, 1.0217]  p 3.71e-01  Holm 7.43e-01  different choices 62/156
+
+Family R (replication, descriptive)  (ratio = gm regret model / reference; < 1 = model better)
+  M2 vs M1 at 1e+08: ratio 0.9753 CI [0.9310, 1.0183]  p 6.60e-01  Holm 1.00e+00  different choices 106/156
+  M2 vs M1 at 1e+09: ratio 0.9720 CI [0.9277, 1.0157]  p 5.40e-01  Holm 1.00e+00  different choices 106/156
+  M2 vs M3 at 1e+08: ratio 0.9468 CI [0.8935, 1.0008]  p 3.81e-01  Holm 1.00e+00  different choices 129/156
+  M2 vs M3 at 1e+09: ratio 0.9403 CI [0.8866, 0.9948]  p 2.55e-01  Holm 1.00e+00  different choices 128/156
+
+Control C (exploratory; ratio < 1 = own calibration better)  (ratio = gm regret model / reference; < 1 = model better)
+  M0 vs M0_brisbane_cal at 1e+08: ratio 0.9755 CI [0.9282, 1.0244]  p 8.38e-01  different choices 120/156
+  M0 vs M0_brisbane_cal at 1e+09: ratio 0.9742 CI [0.9268, 1.0238]  p 7.59e-01  different choices 121/156
+  M2b vs M2b_brisbane_cal at 1e+08: ratio 0.9707 CI [0.9267, 1.0150]  p 2.69e-01  different choices 87/156
+  M2b vs M2b_brisbane_cal at 1e+09: ratio 0.9714 CI [0.9261, 1.0167]  p 2.79e-01  different choices 88/156
+
+T1 False  S1 True  S2 False
+written /home/alshehrisara/QuMPI/runs/paper_budget/gt_att/eval_transfer_holdout4_sherbrooke.json
